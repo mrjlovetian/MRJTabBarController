@@ -10,7 +10,7 @@
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
-
+ios8.0以上，相关资料请查阅源代码
 ## Installation
 
 TableBarViewController is available through [CocoaPods](http://cocoapods.org). To install
@@ -22,8 +22,10 @@ pod "TableBarViewController"
 
 ## Author
 
-mrjyuhongjiang, mrjyuhongjiang@gmail.com
+余洪江, mrjlovetian@gmail.com
 
 ## License
 
 TableBarViewController is available under the MIT license. See the LICENSE file for more info.
+
+
