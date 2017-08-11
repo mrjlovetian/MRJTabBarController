@@ -1,0 +1,16 @@
+PODS:
+  - TableBarViewController (0.1.0)
+
+DEPENDENCIES:
+  - TableBarViewController (from `../`)
+
+EXTERNAL SOURCES:
+  TableBarViewController:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  TableBarViewController: 2108aa6bc70a9ef55ceaf4964879030ffb8a806d
+
+PODFILE CHECKSUM: 67bb354a9c0e7ad5bdb4d21ffc02d33c366748c6
+
+COCOAPODS: 1.2.1
