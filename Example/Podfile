@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TableBarViewController_Example' do
+  pod 'TableBarViewController', :path => '../'
+
+  target 'TableBarViewController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
