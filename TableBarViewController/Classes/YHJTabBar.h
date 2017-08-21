@@ -28,7 +28,7 @@
 /**
  *  已经切换到指定index
  */
-- (void)yp_tabBar:(YHJTabBar *)tabBar didSelectedItemAtIndex:(NSUInteger)index;
+- (void)yhj_tabBar:(YHJTabBar *)tabBar didSelectedItemAtIndex:(NSUInteger)index;
 
 @end
 

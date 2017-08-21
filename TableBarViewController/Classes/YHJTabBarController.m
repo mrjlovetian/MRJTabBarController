@@ -29,7 +29,7 @@
 
 @interface YHJTabContentScrollView : UIScrollView
 
-@property (nonatomic, weak) id<YHJTabContentScrollViewDelegate> yp_delegate;
+@property (nonatomic, weak) id<YHJTabContentScrollViewDelegate> yhj_delegate;
 
 @property (nonatomic, assign) BOOL interceptLeftSlideGuetureInLastPage;
 @property (nonatomic, assign) BOOL interceptRightSlideGuetureInFirstPage;
@@ -41,59 +41,59 @@
 
 @implementation UIViewController (YHJTabBarController)
 
-- (NSString *)yp_tabItemTitle {
+- (NSString *)yhj_tabItemTitle {
     return objc_getAssociatedObject(self, _cmd);
 }
 
-- (void)setYp_tabItemTitle:(NSString *)yp_tabItemTitle {
-    self.yp_tabItem.title = yp_tabItemTitle;
-    objc_setAssociatedObject(self, @selector(yp_tabItemTitle), yp_tabItemTitle, OBJC_ASSOCIATION_COPY_NONATOMIC);
+- (void)setyhj_tabItemTitle:(NSString *)yhj_tabItemTitle {
+    self.yhj_tabItem.title = yhj_tabItemTitle;
+    objc_setAssociatedObject(self, @selector(yhj_tabItemTitle), yhj_tabItemTitle, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
-- (UIImage *)yp_tabItemImage {
+- (UIImage *)yhj_tabItemImage {
     return objc_getAssociatedObject(self, _cmd);
 }
 
-- (void)setYp_tabItemImage:(UIImage *)yp_tabItemImage {
-    self.yp_tabItem.image = yp_tabItemImage;
-    objc_setAssociatedObject(self, @selector(yp_tabItemImage), yp_tabItemImage, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+- (void)setyhj_tabItemImage:(UIImage *)yhj_tabItemImage {
+    self.yhj_tabItem.image = yhj_tabItemImage;
+    objc_setAssociatedObject(self, @selector(yhj_tabItemImage), yhj_tabItemImage, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (UIImage *)yp_tabItemSelectedImage {
+- (UIImage *)yhj_tabItemSelectedImage {
     return objc_getAssociatedObject(self, _cmd);
 }
 
-- (void)setYp_tabItemSelectedImage:(UIImage *)yp_tabItemSelectedImage {
-    self.yp_tabItem.selectedImage = yp_tabItemSelectedImage;
-    objc_setAssociatedObject(self, @selector(yp_tabItemSelectedImage), yp_tabItemSelectedImage, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+- (void)setyhj_tabItemSelectedImage:(UIImage *)yhj_tabItemSelectedImage {
+    self.yhj_tabItem.selectedImage = yhj_tabItemSelectedImage;
+    objc_setAssociatedObject(self, @selector(yhj_tabItemSelectedImage), yhj_tabItemSelectedImage, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (YHJTabItem *)yp_tabItem {
-    YHJTabBar *tabBar = self.yp_tabBarController.tabBar;
+- (YHJTabItem *)yhj_tabItem {
+    YHJTabBar *tabBar = self.yhj_tabBarController.tabBar;
     if (!tabBar) {
         return nil;
     }
-    if (![self.yp_tabBarController.viewControllers containsObject:self]) {
+    if (![self.yhj_tabBarController.viewControllers containsObject:self]) {
         return nil;
     }
     
-    NSUInteger index = [self.yp_tabBarController.viewControllers indexOfObject:self];
+    NSUInteger index = [self.yhj_tabBarController.viewControllers indexOfObject:self];
     return tabBar.items[index];
 }
 
-- (YHJTabBarController *)yp_tabBarController {
+- (YHJTabBarController *)yhj_tabBarController {
     return (YHJTabBarController *)self.parentViewController;
 }
 
-- (void)yp_tabItemDidSelected:(BOOL)isFirstTime {}
+- (void)yhj_tabItemDidSelected:(BOOL)isFirstTime {}
 
 - (void)tabItemDidSelected {}
 
-- (void)yp_tabItemDidDeselected {}
+- (void)yhj_tabItemDidDeselected {}
 
 - (void)tabItemDidDeselected {}
 
-- (BOOL)yp_isTabItemSelectedFirstTime {
+- (BOOL)yhj_isTabItemSelectedFirstTime {
     id selected = objc_getAssociatedObject(self, _cmd);
     if (!selected) {
         return YES;
@@ -220,9 +220,9 @@
         [self addChildViewController:controller];
         
         YHJTabItem *item = [YHJTabItem buttonWithType:UIButtonTypeCustom];
-        item.image = controller.yp_tabItemImage;
-        item.selectedImage = controller.yp_tabItemSelectedImage;
-        item.title = controller.yp_tabItemTitle;
+        item.image = controller.yhj_tabItemImage;
+        item.selectedImage = controller.yhj_tabItemSelectedImage;
+        item.title = controller.yhj_tabItemTitle;
         [items addObject:item];
     }
     self.tabBar.items = items;
@@ -247,7 +247,7 @@
         self.contentScrollView.showsVerticalScrollIndicator = NO;
         self.contentScrollView.scrollsToTop = NO;
         self.contentScrollView.delegate = self;
-        self.contentScrollView.yp_delegate = self;
+        self.contentScrollView.yhj_delegate = self;
         [self.view insertSubview:self.contentScrollView belowSubview:self.tabBar];
         self.contentScrollView.contentSize = CGSizeMake(self.contentViewFrame.size.width * self.viewControllers.count, self.contentViewFrame.size.height);
     }
@@ -304,14 +304,14 @@
 
 #pragma mark - YHJTabBarDelegate
 
-- (void)yp_tabBar:(YHJTabBar *)tabBar didSelectedItemAtIndex:(NSUInteger)index {
+- (void)yhj_tabBar:(YHJTabBar *)tabBar didSelectedItemAtIndex:(NSUInteger)index {
     if (index == self.selectedControllerIndex) {
         return;
     }
     UIViewController *oldController = nil;
     if (self.selectedControllerIndex != NSNotFound) {
         oldController = self.viewControllers[self.selectedControllerIndex];
-        [oldController yp_tabItemDidDeselected];
+        [oldController yhj_tabItemDidDeselected];
         if ([oldController respondsToSelector:@selector(tabItemDidDeselected)]) {
             [oldController performSelector:@selector(tabItemDidDeselected)];
         }
@@ -341,12 +341,12 @@
         }
     }
     
-    BOOL isSelectedFirstTime = [curController yp_isTabItemSelectedFirstTime];
+    BOOL isSelectedFirstTime = [curController yhj_isTabItemSelectedFirstTime];
     if (isSelectedFirstTime) {
-        objc_setAssociatedObject(curController, @selector(yp_isTabItemSelectedFirstTime), @(NO), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        objc_setAssociatedObject(curController, @selector(yhj_isTabItemSelectedFirstTime), @(NO), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
     
-    [curController yp_tabItemDidSelected:isSelectedFirstTime];
+    [curController yhj_tabItemDidSelected:isSelectedFirstTime];
     if ([curController respondsToSelector:@selector(tabItemDidSelected)]) {
         [curController performSelector:@selector(tabItemDidSelected)];
     }
@@ -475,8 +475,8 @@
     }
     
     // 其他情况
-    if (self.yp_delegate && [self.yp_delegate respondsToSelector:@selector(scrollView:shouldScrollToPageIndex:)]) {
-        return [self.yp_delegate scrollView:self shouldScrollToPageIndex:targetIndex];
+    if (self.yhj_delegate && [self.yhj_delegate respondsToSelector:@selector(scrollView:shouldScrollToPageIndex:)]) {
+        return [self.yhj_delegate scrollView:self shouldScrollToPageIndex:targetIndex];
     }
     
     return YES;
