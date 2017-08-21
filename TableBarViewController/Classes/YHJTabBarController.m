@@ -242,10 +242,15 @@
 - (void)setContentScrollEnabledAndTapSwitchAnimated:(BOOL)switchAnimated {
     if (!self.contentScrollView) {
         self.contentScrollView = [[YHJTabContentScrollView alloc] initWithFrame:self.contentViewFrame];
+#if TARGET_OS_IOS
         self.contentScrollView.pagingEnabled = YES;
+        self.contentScrollView.scrollsToTop = NO;
+#elif TARGET_OS_TV
+        
+#endif
+        
         self.contentScrollView.showsHorizontalScrollIndicator = NO;
         self.contentScrollView.showsVerticalScrollIndicator = NO;
-        self.contentScrollView.scrollsToTop = NO;
         self.contentScrollView.delegate = self;
         self.contentScrollView.yhj_delegate = self;
         [self.view insertSubview:self.contentScrollView belowSubview:self.tabBar];
@@ -353,10 +358,20 @@
     
     // 当contentView为scrollView及其子类时，设置它支持点击状态栏回到顶部
     if (oldController && [oldController.view isKindOfClass:[UIScrollView class]]) {
+#if TARGET_OS_IOS
         [(UIScrollView *)oldController.view setScrollsToTop:NO];
+#elif TARGET_OS_TV
+        
+#endif
+        
     }
     if ([curController.view isKindOfClass:[UIScrollView class]]) {
+#if TARGET_OS_IOS
         [(UIScrollView *)curController.view setScrollsToTop:YES];
+#elif TARGET_OS_TV
+        
+#endif
+        
     }
 
     _selectedControllerIndex = index;
