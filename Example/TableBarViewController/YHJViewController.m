@@ -7,6 +7,7 @@
 //
 
 #import "YHJViewController.h"
+#import "RunTimeObject.h"
 
 @interface YHJViewController ()
 
@@ -17,6 +18,17 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    
+    
+    RunTimeObject *runTime = [[RunTimeObject alloc] init];
+    [runTime methodName];
+    
+    
+    [runTime performSelectorOnMainThread:@selector(otherMehod) withObject:self waitUntilDone:YES];
+    
+    NSLog(@"%@", [runTime description]);
+    
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
