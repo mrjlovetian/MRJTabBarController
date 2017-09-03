@@ -1,35 +1,35 @@
 //
-//  YHJTabBarController.m
-//  YHJTabBarController
+//  MRJ_TabBarController.m
+//  MRJ_TabBarController
 //
 //  Created by 余洪江 on 17/8/11.
-//  Copyright (c) 2017年 YHJTabBarController. All rights reserved.
+//  Copyright (c) 2017年 MRJ_TabBarController. All rights reserved.
 //
 
-#import "YHJTabBarController.h"
+#import "MRJ_TabBarController.h"
 #import <objc/runtime.h>
 
 #define TAB_BAR_HEIGHT 50
 
-#pragma mark - YHJTabContentScrollView
+#pragma mark - MRJ_TabContentScrollView
 
 /**
  *  自定义UIScrollView，在需要时可以拦截其滑动手势
  */
 
-@class YHJTabContentScrollView;
+@class MRJ_TabContentScrollView;
 
-@protocol YHJTabContentScrollViewDelegate <NSObject>
+@protocol MRJ_TabContentScrollViewDelegate <NSObject>
 
 @optional
 
-- (BOOL)scrollView:(YHJTabContentScrollView *)scrollView shouldScrollToPageIndex:(NSUInteger)index;
+- (BOOL)scrollView:(MRJ_TabContentScrollView *)scrollView shouldScrollToPageIndex:(NSUInteger)index;
 
 @end
 
-@interface YHJTabContentScrollView : UIScrollView
+@interface MRJ_TabContentScrollView : UIScrollView
 
-@property (nonatomic, weak) id<YHJTabContentScrollViewDelegate> yhj_delegate;
+@property (nonatomic, weak) id<MRJ_TabContentScrollViewDelegate> MRJ__delegate;
 
 @property (nonatomic, assign) BOOL interceptLeftSlideGuetureInLastPage;
 @property (nonatomic, assign) BOOL interceptRightSlideGuetureInFirstPage;
@@ -37,63 +37,63 @@
 @end
 
 
-#pragma mark - UIViewController (YHJTabBarController)
+#pragma mark - UIViewController (MRJ_TabBarController)
 
-@implementation UIViewController (YHJTabBarController)
+@implementation UIViewController (MRJ_TabBarController)
 
-- (NSString *)yhj_tabItemTitle {
+- (NSString *)MRJ__tabItemTitle {
     return objc_getAssociatedObject(self, _cmd);
 }
 
-- (void)setYhj_tabItemTitle:(NSString *)yhj_tabItemTitle {
-    self.yhj_tabItem.title = yhj_tabItemTitle;
-    objc_setAssociatedObject(self, @selector(yhj_tabItemTitle), yhj_tabItemTitle, OBJC_ASSOCIATION_COPY_NONATOMIC);
+- (void)setYhj_tabItemTitle:(NSString *)MRJ__tabItemTitle {
+    self.MRJ__tabItem.title = MRJ__tabItemTitle;
+    objc_setAssociatedObject(self, @selector(MRJ__tabItemTitle), MRJ__tabItemTitle, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
-- (UIImage *)yhj_tabItemImage {
+- (UIImage *)MRJ__tabItemImage {
     return objc_getAssociatedObject(self, _cmd);
 }
 
-- (void)setYhj_tabItemImage:(UIImage *)yhj_tabItemImage {
-    self.yhj_tabItem.image = yhj_tabItemImage;
-    objc_setAssociatedObject(self, @selector(yhj_tabItemImage), yhj_tabItemImage, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+- (void)setYhj_tabItemImage:(UIImage *)MRJ__tabItemImage {
+    self.MRJ__tabItem.image = MRJ__tabItemImage;
+    objc_setAssociatedObject(self, @selector(MRJ__tabItemImage), MRJ__tabItemImage, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (UIImage *)yhj_tabItemSelectedImage {
+- (UIImage *)MRJ__tabItemSelectedImage {
     return objc_getAssociatedObject(self, _cmd);
 }
 
-- (void)setYhj_tabItemSelectedImage:(UIImage *)yhj_tabItemSelectedImage {
-    self.yhj_tabItem.selectedImage = yhj_tabItemSelectedImage;
-    objc_setAssociatedObject(self, @selector(yhj_tabItemSelectedImage), yhj_tabItemSelectedImage, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+- (void)setYhj_tabItemSelectedImage:(UIImage *)MRJ__tabItemSelectedImage {
+    self.MRJ__tabItem.selectedImage = MRJ__tabItemSelectedImage;
+    objc_setAssociatedObject(self, @selector(MRJ__tabItemSelectedImage), MRJ__tabItemSelectedImage, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (YHJTabItem *)yhj_tabItem {
-    YHJTabBar *tabBar = self.yhj_tabBarController.tabBar;
+- (MRJ_TabItem *)MRJ__tabItem {
+    MRJ_TabBar *tabBar = self.MRJ__tabBarController.tabBar;
     if (!tabBar) {
         return nil;
     }
-    if (![self.yhj_tabBarController.viewControllers containsObject:self]) {
+    if (![self.MRJ__tabBarController.viewControllers containsObject:self]) {
         return nil;
     }
     
-    NSUInteger index = [self.yhj_tabBarController.viewControllers indexOfObject:self];
+    NSUInteger index = [self.MRJ__tabBarController.viewControllers indexOfObject:self];
     return tabBar.items[index];
 }
 
-- (YHJTabBarController *)yhj_tabBarController {
-    return (YHJTabBarController *)self.parentViewController;
+- (MRJ_TabBarController *)MRJ__tabBarController {
+    return (MRJ_TabBarController *)self.parentViewController;
 }
 
-- (void)yhj_tabItemDidSelected:(BOOL)isFirstTime {}
+- (void)MRJ__tabItemDidSelected:(BOOL)isFirstTime {}
 
 - (void)tabItemDidSelected {}
 
-- (void)yhj_tabItemDidDeselected {}
+- (void)MRJ__tabItemDidDeselected {}
 
 - (void)tabItemDidDeselected {}
 
-- (BOOL)yhj_isTabItemSelectedFirstTime {
+- (BOOL)MRJ__isTabItemSelectedFirstTime {
     id selected = objc_getAssociatedObject(self, _cmd);
     if (!selected) {
         return YES;
@@ -104,21 +104,21 @@
 @end
 
 
-#pragma mark - YHJTabBarController
+#pragma mark - MRJ_TabBarController
 
-@interface YHJTabBarController () <UIScrollViewDelegate, YHJTabContentScrollViewDelegate> {
+@interface MRJ_TabBarController () <UIScrollViewDelegate, MRJ_TabContentScrollViewDelegate> {
     BOOL _didViewAppeared;
     CGFloat _lastContentScrollViewOffsetX;
 }
 
-@property (nonatomic, strong) YHJTabContentScrollView *contentScrollView;
+@property (nonatomic, strong) MRJ_TabContentScrollView *contentScrollView;
 
 @property (nonatomic, assign) BOOL contentScrollEnabled;
 @property (nonatomic, assign) BOOL contentSwitchAnimated;
 
 @end
 
-@implementation YHJTabBarController
+@implementation MRJ_TabBarController
 
 - (instancetype)init {
     self = [super init];
@@ -138,7 +138,7 @@
 
 - (void)_setup {
     _selectedControllerIndex = NSNotFound;
-    _tabBar = [[YHJTabBar alloc] init];
+    _tabBar = [[MRJ_TabBar alloc] init];
     _tabBar.delegate = self;
     
     _loadViewOfChildContollerWhileAppear = NO;
@@ -219,10 +219,10 @@
     for (UIViewController *controller in _viewControllers) {
         [self addChildViewController:controller];
         
-        YHJTabItem *item = [YHJTabItem buttonWithType:UIButtonTypeCustom];
-        item.image = controller.yhj_tabItemImage;
-        item.selectedImage = controller.yhj_tabItemSelectedImage;
-        item.title = controller.yhj_tabItemTitle;
+        MRJ_TabItem *item = [MRJ_TabItem buttonWithType:UIButtonTypeCustom];
+        item.image = controller.MRJ__tabItemImage;
+        item.selectedImage = controller.MRJ__tabItemSelectedImage;
+        item.title = controller.MRJ__tabItemTitle;
         [items addObject:item];
     }
     self.tabBar.items = items;
@@ -241,7 +241,7 @@
 
 - (void)setContentScrollEnabledAndTapSwitchAnimated:(BOOL)switchAnimated {
     if (!self.contentScrollView) {
-        self.contentScrollView = [[YHJTabContentScrollView alloc] initWithFrame:self.contentViewFrame];
+        self.contentScrollView = [[MRJ_TabContentScrollView alloc] initWithFrame:self.contentViewFrame];
 #if TARGET_OS_IOS
         self.contentScrollView.pagingEnabled = YES;
         self.contentScrollView.scrollsToTop = NO;
@@ -252,7 +252,7 @@
         self.contentScrollView.showsHorizontalScrollIndicator = NO;
         self.contentScrollView.showsVerticalScrollIndicator = NO;
         self.contentScrollView.delegate = self;
-        self.contentScrollView.yhj_delegate = self;
+        self.contentScrollView.MRJ__delegate = self;
         [self.view insertSubview:self.contentScrollView belowSubview:self.tabBar];
         self.contentScrollView.contentSize = CGSizeMake(self.contentViewFrame.size.width * self.viewControllers.count, self.contentViewFrame.size.height);
     }
@@ -307,16 +307,16 @@
 
 - (void)didSelectViewControllerAtIndex:(NSUInteger)index {}
 
-#pragma mark - YHJTabBarDelegate
+#pragma mark - MRJ_TabBarDelegate
 
-- (void)yhj_tabBar:(YHJTabBar *)tabBar didSelectedItemAtIndex:(NSUInteger)index {
+- (void)MRJ__tabBar:(MRJ_TabBar *)tabBar didSelectedItemAtIndex:(NSUInteger)index {
     if (index == self.selectedControllerIndex) {
         return;
     }
     UIViewController *oldController = nil;
     if (self.selectedControllerIndex != NSNotFound) {
         oldController = self.viewControllers[self.selectedControllerIndex];
-        [oldController yhj_tabItemDidDeselected];
+        [oldController MRJ__tabItemDidDeselected];
         if ([oldController respondsToSelector:@selector(tabItemDidDeselected)]) {
             [oldController performSelector:@selector(tabItemDidDeselected)];
         }
@@ -346,12 +346,12 @@
         }
     }
     
-    BOOL isSelectedFirstTime = [curController yhj_isTabItemSelectedFirstTime];
+    BOOL isSelectedFirstTime = [curController MRJ__isTabItemSelectedFirstTime];
     if (isSelectedFirstTime) {
-        objc_setAssociatedObject(curController, @selector(yhj_isTabItemSelectedFirstTime), @(NO), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        objc_setAssociatedObject(curController, @selector(MRJ__isTabItemSelectedFirstTime), @(NO), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
     
-    [curController yhj_tabItemDidSelected:isSelectedFirstTime];
+    [curController MRJ__tabItemDidSelected:isSelectedFirstTime];
     if ([curController respondsToSelector:@selector(tabItemDidSelected)]) {
         [curController performSelector:@selector(tabItemDidSelected)];
     }
@@ -379,9 +379,9 @@
     [self didSelectViewControllerAtIndex:_selectedControllerIndex];
 }
 
-#pragma mark - YHJTabContentScrollViewDelegate
+#pragma mark - MRJ_TabContentScrollViewDelegate
 
-- (BOOL)scrollView:(YHJTabContentScrollView *)scrollView shouldScrollToPageIndex:(NSUInteger)index {
+- (BOOL)scrollView:(MRJ_TabContentScrollView *)scrollView shouldScrollToPageIndex:(NSUInteger)index {
     if ([self respondsToSelector:@selector(tabBar:shouldSelectItemAtIndex:)]) {
         return [self tabBar:self.tabBar shouldSelectItemAtIndex:index];
     }
@@ -456,7 +456,7 @@
 @end
 
 
-@implementation YHJTabContentScrollView
+@implementation MRJ_TabContentScrollView
 
 /**
  *  重写此方法，在需要的时候，拦截UIPanGestureRecognizer
@@ -490,8 +490,8 @@
     }
     
     // 其他情况
-    if (self.yhj_delegate && [self.yhj_delegate respondsToSelector:@selector(scrollView:shouldScrollToPageIndex:)]) {
-        return [self.yhj_delegate scrollView:self shouldScrollToPageIndex:targetIndex];
+    if (self.MRJ__delegate && [self.MRJ__delegate respondsToSelector:@selector(scrollView:shouldScrollToPageIndex:)]) {
+        return [self.MRJ__delegate scrollView:self shouldScrollToPageIndex:targetIndex];
     }
     
     return YES;

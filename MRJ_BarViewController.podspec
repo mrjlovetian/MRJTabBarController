@@ -7,8 +7,8 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'TableBarViewController'
-  s.version          = '0.1.2'
+  s.name             = 'MRJ_BarViewController'
+  s.version          = '0.1.2.1'
   s.summary          = 'TableBarViewController create with customer.'
 
 # This description is used to generate tags and improve search results.

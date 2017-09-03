@@ -1,27 +1,27 @@
 //
-//  YHJTabBar.m
-//  YHJTabBarController
+//  MRJ_TabBar.m
+//  MRJ_TabBarController
 //
 //  Created by 余洪江 on 17/8/11.
-//  Copyright (c) 2017年 YHJTabBar. All rights reserved.
+//  Copyright (c) 2017年 MRJ_TabBar. All rights reserved.
 //
 
-#import "YHJTabBar.h"
+#import "MRJ_TabBar.h"
 
 #define BADGE_BG_COLOR_DEFAULT [UIColor colorWithRed:252 / 255.0f green:15 / 255.0f blue:29 / 255.0f alpha:1.0f]
 
-@interface YHJTabBar ()
+@interface MRJ_TabBar ()
 
 // 当TabBar支持滚动时，使用此scrollView
 @property (nonatomic, strong) UIScrollView *scrollView;
 
-@property (nonatomic, strong) YHJTabItem *specialItem;
-@property (nonatomic, copy) void (^specialItemHandler)(YHJTabItem *item);
+@property (nonatomic, strong) MRJ_TabItem *specialItem;
+@property (nonatomic, copy) void (^specialItemHandler)(MRJ_TabItem *item);
 
 // 选中背景
 @property (nonatomic, strong) UIImageView *itemSelectedBgImageView;
 
-// 选中背景相对于YHJTabItem的insets
+// 选中背景相对于MRJ_TabItem的insets
 @property (nonatomic, assign) UIEdgeInsets itemSelectedBgInsets;
 
 // TabItem选中切换时，是否显示动画
@@ -62,7 +62,7 @@
 
 @end
 
-@implementation YHJTabBar
+@implementation MRJ_TabBar
 
 - (instancetype)initWithFrame:(CGRect)frame {
     self = [super initWithFrame:frame];
@@ -128,7 +128,7 @@
     _items = [items copy];
     
     // 初始化每一个item
-    for (YHJTabItem *item in self.items) {
+    for (MRJ_TabItem *item in self.items) {
         item.titleColor = self.itemTitleColor;
         item.titleSelectedColor = self.itemTitleSelectedColor;
         item.titleFont = self.itemTitleFont;
@@ -160,7 +160,7 @@
 - (void)setTitles:(NSArray *)titles {
     NSMutableArray *items = [NSMutableArray array];
     for (NSString *title in titles) {
-        YHJTabItem *item = [[YHJTabItem alloc] init];
+        MRJ_TabItem *item = [[MRJ_TabItem alloc] init];
         item.title = title;
         [items addObject:item];
     }
@@ -186,7 +186,7 @@
         [self.scrollView addSubview:self.itemSelectedBgImageView];
         CGFloat x = self.leftAndRightSpacing;
         for (NSUInteger index = 0; index < self.items.count; index++) {
-            YHJTabItem *item = self.items[index];
+            MRJ_TabItem *item = self.items[index];
             CGFloat width = 0;
             // item的宽度为一个固定值
             if (self.itemWidth > 0) {
@@ -224,7 +224,7 @@
         self.itemWidth = floorf(self.itemWidth + 0.5f);
 
         for (NSUInteger index = 0; index < self.items.count; index++) {
-            YHJTabItem *item = self.items[index];
+            MRJ_TabItem *item = self.items[index];
             if (index == self.items.count - 1) {
                 self.itemWidth = self.frame.size.width - x;
             }
@@ -271,7 +271,7 @@
     }
     
     if (_selectedItemIndex != NSNotFound) {
-        YHJTabItem *oldSelectedItem = self.items[_selectedItemIndex];
+        MRJ_TabItem *oldSelectedItem = self.items[_selectedItemIndex];
         oldSelectedItem.selected = NO;
         if (self.itemFontChangeFollowContentScroll) {
             // 如果支持字体平滑渐变切换，则设置item的scale
@@ -283,7 +283,7 @@
         }
     }
     
-    YHJTabItem *newSelectedItem = self.items[selectedItemIndex];
+    MRJ_TabItem *newSelectedItem = self.items[selectedItemIndex];
     newSelectedItem.selected = YES;
     if (self.itemFontChangeFollowContentScroll) {
         // 如果支持字体平滑渐变切换，则设置item的scale
@@ -308,8 +308,8 @@
     // 如果tabbar支持滚动，将选中的item放到tabbar的中央
     [self setSelectedItemCenter];
     
-    if (self.delegate && [self.delegate respondsToSelector:@selector(yhj_tabBar:didSelectedItemAtIndex:)]) {
-        [self.delegate yhj_tabBar:self didSelectedItemAtIndex:selectedItemIndex];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(MRJ__tabBar:didSelectedItemAtIndex:)]) {
+        [self.delegate MRJ__tabBar:self didSelectedItemAtIndex:selectedItemIndex];
     }
 }
 
@@ -321,7 +321,7 @@
         self.itemSelectedBgImageView.frame = CGRectZero;
         return;
     }
-    YHJTabItem *item = self.items[index];
+    MRJ_TabItem *item = self.items[index];
     CGFloat width = item.frameWithOutTransform.size.width - self.itemSelectedBgInsets.left - self.itemSelectedBgInsets.right;
     CGFloat height = item.frameWithOutTransform.size.height - self.itemSelectedBgInsets.top - self.itemSelectedBgInsets.bottom;
     self.itemSelectedBgImageView.frame = CGRectMake(item.frameWithOutTransform.origin.x + self.itemSelectedBgInsets.left,
@@ -387,24 +387,24 @@
     return 1.0f;
 }
 
-- (void)tabItemClicked:(YHJTabItem *)item {
+- (void)tabItemClicked:(MRJ_TabItem *)item {
     self.selectedItemIndex = item.index;
 }
 
-- (void)specialItemClicked:(YHJTabItem *)item {
+- (void)specialItemClicked:(MRJ_TabItem *)item {
     if (self.specialItemHandler) {
         self.specialItemHandler(item);
     }
 }
 
-- (YHJTabItem *)selectedItem {
+- (MRJ_TabItem *)selectedItem {
     if (self.selectedItemIndex == NSNotFound) {
         return nil;
     }
     return self.items[self.selectedItemIndex];
 }
 
-- (void)setSpecialItem:(YHJTabItem *)item afterItemWithIndex:(NSUInteger)index tapHandler:(void (^)(YHJTabItem *item))handler {
+- (void)setSpecialItem:(MRJ_TabItem *)item afterItemWithIndex:(NSUInteger)index tapHandler:(void (^)(MRJ_TabItem *item))handler {
     self.specialItem = item;
     self.specialItem.index = index;
     [self.specialItem addTarget:self action:@selector(specialItemClicked:) forControlEvents:UIControlEventTouchUpInside];
@@ -467,7 +467,7 @@
         // item字体不支持平滑切换，更新item的字体
         if (self.itemTitleSelectedFont) {
             // 设置了选中字体，则只更新未选中的item
-            for (YHJTabItem *item in self.items) {
+            for (MRJ_TabItem *item in self.items) {
                 if (!item.selected) {
                     [item setTitleFont:itemTitleFont];
                 }
@@ -499,7 +499,7 @@
         self.itemFontChangeFollowContentScroll &&
         self.itemTitleSelectedFont.pointSize != self.itemTitleFont.pointSize) {
         [self.items makeObjectsPerformSelector:@selector(setTitleFont:) withObject:self.itemTitleSelectedFont];
-        for (YHJTabItem *item in self.items) {
+        for (MRJ_TabItem *item in self.items) {
             if (!item.selected) {
                 item.transform = CGAffineTransformMakeScale(self.itemTitleUnselectedFontScale,
                                                             self.itemTitleUnselectedFontScale);
@@ -526,7 +526,7 @@
     _itemContentHorizontalCenter = YES;
     self.itemContentHorizontalCenterVerticalOffset = verticalOffset;
     self.itemContentHorizontalCenterSpacing = spacing;
-    for (YHJTabItem *item in self.items) {
+    for (MRJ_TabItem *item in self.items) {
         [item setContentHorizontalCenterWithVerticalOffset:verticalOffset spacing:spacing];
     }
 }
@@ -562,7 +562,7 @@
     self.numberBadgeTitleHorizonalSpace = titleHorizonalSpace;
     self.numberBadgeTitleVerticalSpace = titleVerticalSpace;
     
-    for (YHJTabItem *item in self.items) {
+    for (MRJ_TabItem *item in self.items) {
         [item setNumberBadgeMarginTop:marginTop
                     centerMarginRight:centerMarginRight
                   titleHorizonalSpace:titleHorizonalSpace
@@ -577,7 +577,7 @@
     self.dotBadgeCenterMarginRight = centerMarginRight;
     self.dotBadgeSideLength = sideLength;
     
-    for (YHJTabItem *item in self.items) {
+    for (MRJ_TabItem *item in self.items) {
         [item setDotBadgeMarginTop:marginTop
                  centerMarginRight:centerMarginRight
                         sideLength:sideLength];
@@ -621,7 +621,7 @@
         }
         [self.separatorLayers makeObjectsPerformSelector:@selector(removeFromSuperlayer)];
         [self.separatorLayers removeAllObjects];
-        [self.items enumerateObjectsUsingBlock:^(YHJTabItem * _Nonnull item, NSUInteger idx, BOOL * _Nonnull stop) {
+        [self.items enumerateObjectsUsingBlock:^(MRJ_TabItem * _Nonnull item, NSUInteger idx, BOOL * _Nonnull stop) {
             if (idx > 0) {
                 CALayer *layer = [[CALayer alloc] init];
                 layer.backgroundColor = self.itemSeparatorColor.CGColor;
@@ -649,8 +649,8 @@
     NSUInteger leftIndex = offsetX / scrollViewWidth;
     NSUInteger rightIndex = leftIndex + 1;
     
-    YHJTabItem *leftItem = self.items[leftIndex];
-    YHJTabItem *rightItem = nil;
+    MRJ_TabItem *leftItem = self.items[leftIndex];
+    MRJ_TabItem *rightItem = nil;
     if (rightIndex < self.items.count) {
         rightItem = self.items[rightIndex];
     }

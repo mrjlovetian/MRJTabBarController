@@ -1,5 +1,5 @@
 //
-//  YHJViewController.m
+//  MRJ_ViewController.m
 //  TableBarViewController
 //
 //  Created by mrjyuhongjiang on 08/11/2017.

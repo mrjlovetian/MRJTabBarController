@@ -1,9 +1,9 @@
 //
-//  YHJTabItem.h
-//  YHJTabBarController
+//  MRJ_TabItem.h
+//  MRJ_TabBarController
 //
 //  Created by 余洪江 on 17/8/11.
-//  Copyright (c) 2017年 YHJTabItem. All rights reserved.
+//  Copyright (c) 2017年 MRJ_TabItem. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -11,12 +11,12 @@
 /**
  *  Badge样式
  */
-typedef NS_ENUM(NSInteger, YHJTabItemBadgeStyle) {
-    YHJTabItemBadgeStyleNumber = 0, // 数字样式
-    YHJTabItemBadgeStyleDot = 1, // 小圆点
+typedef NS_ENUM(NSInteger, MRJ_TabItemBadgeStyle) {
+    MRJ_TabItemBadgeStyleNumber = 0, // 数字样式
+    MRJ_TabItemBadgeStyleDot = 1, // 小圆点
 };
 
-@interface YHJTabItem : UIButton
+@interface MRJ_TabItem : UIButton
 
 /**
  *  item在tabBar中的index，此属性不能手动设置
@@ -25,7 +25,7 @@ typedef NS_ENUM(NSInteger, YHJTabItemBadgeStyle) {
 
 /**
  *  用于记录tabItem在缩放前的frame，
- *  在YHJTabBar的属性itemFontChangeFollowContentScroll == YES时会用到
+ *  在MRJ_TabBar的属性itemFontChangeFollowContentScroll == YES时会用到
  */
 @property (nonatomic, assign, readonly) CGRect frameWithOutTransform;
 @property (nonatomic, assign) CGSize size;
@@ -39,7 +39,7 @@ typedef NS_ENUM(NSInteger, YHJTabItemBadgeStyle) {
 @property (nonatomic, strong) UIImage *selectedImage;
 
 /**
- *  当badgeStyle == YHJTabItemBadgeStyleNumber时，可以设置此属性，显示badge数值
+ *  当badgeStyle == MRJ_TabItemBadgeStyleNumber时，可以设置此属性，显示badge数值
  *  badge > 99，显示99+
  *  badge <= 99 && badge > -99，显示具体数值
  *  badge < -99，显示-99+
@@ -49,7 +49,7 @@ typedef NS_ENUM(NSInteger, YHJTabItemBadgeStyle) {
 /**
  *  badge的样式，支持数字样式和小圆点
  */
-@property (nonatomic, assign) YHJTabItemBadgeStyle badgeStyle;
+@property (nonatomic, assign) MRJ_TabItemBadgeStyle badgeStyle;
 
 /**
  *  badge的背景颜色

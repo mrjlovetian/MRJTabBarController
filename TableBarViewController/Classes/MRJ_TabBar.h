@@ -1,43 +1,43 @@
 //
-//  YHJTabBar.h
-//  YHJTabBarController
+//  MRJ_TabBar.h
+//  MRJ_TabBarController
 //
 //  Created by 余洪江 on 17/8/11.
-//  Copyright (c) 2017年 YHJTabBarController. All rights reserved.
+//  Copyright (c) 2017年 MRJ_TabBarController. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "YHJTabItem.h"
+#import "MRJ_TabItem.h"
 
-@class YHJTabBar;
+@class MRJ_TabBar;
 
-@protocol YHJTabBarDelegate <NSObject>
+@protocol MRJ_TabBarDelegate <NSObject>
 
 @optional
 
 /**
  *  是否能切换到指定index
  */
-- (BOOL)tabBar:(YHJTabBar *)tabBar shouldSelectItemAtIndex:(NSUInteger)index;
+- (BOOL)tabBar:(MRJ_TabBar *)tabBar shouldSelectItemAtIndex:(NSUInteger)index;
 
 /**
  *  将要切换到指定index
  */
-- (void)tabBar:(YHJTabBar *)tabBar willSelectItemAtIndex:(NSUInteger)index;
+- (void)tabBar:(MRJ_TabBar *)tabBar willSelectItemAtIndex:(NSUInteger)index;
 
 /**
  *  已经切换到指定index
  */
-- (void)yhj_tabBar:(YHJTabBar *)tabBar didSelectedItemAtIndex:(NSUInteger)index;
+- (void)MRJ__tabBar:(MRJ_TabBar *)tabBar didSelectedItemAtIndex:(NSUInteger)index;
 
 @end
 
-@interface YHJTabBar : UIView
+@interface MRJ_TabBar : UIView
 
 /**
- *  TabItems，提供给YHJTabBarController使用，一般不手动设置此属性
+ *  TabItems，提供给MRJ_TabBarController使用，一般不手动设置此属性
  */
-@property (nonatomic, copy) NSArray <YHJTabItem *> *items;
+@property (nonatomic, copy) NSArray <MRJ_TabItem *> *items;
 
 @property (nonatomic, strong) UIColor *itemSelectedBgColor;         // item选中背景颜色
 @property (nonatomic, strong) UIImage *itemSelectedBgImage;         // item选中背景图像
@@ -78,12 +78,12 @@
  */
 @property (nonatomic, assign, getter = isItemContentHorizontalCenter) BOOL itemContentHorizontalCenter;
 
-@property (nonatomic, weak) id<YHJTabBarDelegate> delegate;
+@property (nonatomic, weak) id<MRJ_TabBarDelegate> delegate;
 
 /**
  *  返回已选中的item
  */
-- (YHJTabItem *)selectedItem;
+- (MRJ_TabItem *)selectedItem;
 
 /**
  *  根据titles创建item
@@ -166,21 +166,21 @@
                  marginBottom:(CGFloat)marginBottom;
 
 /**
- *  添加一个特殊的YHJTabItem到tabBar上，此TabItem不包含在tabBar的items数组里
+ *  添加一个特殊的MRJ_TabItem到tabBar上，此TabItem不包含在tabBar的items数组里
  *  主要用于有的项目需要在tabBar的中间放置一个单独的按钮，类似于新浪微博等。
  *  此方法仅适用于不可滚动类型的tabBar
  *
- *  @param item    YHJTabItem对象
+ *  @param item    MRJ_TabItem对象
  *  @param index   将其放在此index的item后面
  *  @param handler 点击事件回调
  */
-- (void)setSpecialItem:(YHJTabItem *)item
+- (void)setSpecialItem:(MRJ_TabItem *)item
     afterItemWithIndex:(NSUInteger)index
-            tapHandler:(void (^)(YHJTabItem *item))handler;
+            tapHandler:(void (^)(MRJ_TabItem *item))handler;
 
 /**
- *  当YHJTabBar所属的YHJTabBarController内容视图支持拖动切换时，
- *  此方法用于同步内容视图scrollView拖动的偏移量，以此来改变YHJTabBar内控件的状态
+ *  当MRJ_TabBar所属的MRJ_TabBarController内容视图支持拖动切换时，
+ *  此方法用于同步内容视图scrollView拖动的偏移量，以此来改变MRJ_TabBar内控件的状态
  */
 - (void)updateSubViewsWhenParentScrollViewScroll:(UIScrollView *)scrollView;
 

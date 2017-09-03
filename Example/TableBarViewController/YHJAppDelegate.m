@@ -1,5 +1,5 @@
 //
-//  YHJAppDelegate.m
+//  MRJ_AppDelegate.m
 //  TableBarViewController
 //
 //  Created by mrjyuhongjiang on 08/11/2017.

@@ -1,14 +1,14 @@
 //
-//  YHJTabItem.m
-//  YHJTabBarController
+//  MRJ_TabItem.m
+//  MRJ_TabBarController
 //
 //  Created by 余洪江 on 17/8/11.
-//  Copyright (c) 2017年 YHJTabItem. All rights reserved.
+//  Copyright (c) 2017年 MRJ_TabItem. All rights reserved.
 //
 
-#import "YHJTabItem.h"
+#import "MRJ_TabItem.h"
 
-@interface YHJTabItem ()
+@interface MRJ_TabItem ()
 
 @property (nonatomic, strong) UIButton *badgeButton;
 @property (nonatomic, strong) UIView *doubleTapView;
@@ -29,7 +29,7 @@
 
 @end
 
-@implementation YHJTabItem
+@implementation MRJ_TabItem
 
 - (instancetype)init {
     self = [super init];
@@ -46,7 +46,7 @@
 }
 
 + (instancetype)buttonWithType:(UIButtonType)buttonType {
-    YHJTabItem *item = [super buttonWithType:buttonType];
+    MRJ_TabItem *item = [super buttonWithType:buttonType];
     [item setup];
     return item;
 }
@@ -58,12 +58,12 @@
     [self addSubview:self.badgeButton];
     
     self.adjustsImageWhenHighlighted = NO;
-    _badgeStyle = YHJTabItemBadgeStyleNumber;
+    _badgeStyle = MRJ_TabItemBadgeStyleNumber;
     self.badge = 0;
 }
 
 /**
- *  覆盖父类的setHighlighted:方法，按下YHJTabItem时，不高亮该item
+ *  覆盖父类的setHighlighted:方法，按下MRJ_TabItem时，不高亮该item
  */
 - (void)setHighlighted:(BOOL)highlighted {
     if (self.adjustsImageWhenHighlighted) {
@@ -189,13 +189,13 @@
     [self updateBadge];
 }
 
-- (void)setBadgeStyle:(YHJTabItemBadgeStyle)badgeStyle {
+- (void)setBadgeStyle:(MRJ_TabItemBadgeStyle)badgeStyle {
     _badgeStyle = badgeStyle;
     [self updateBadge];
 }
 
 - (void)updateBadge {
-    if (self.badgeStyle == YHJTabItemBadgeStyleNumber) {
+    if (self.badgeStyle == MRJ_TabItemBadgeStyleNumber) {
         if (self.badge == 0) {
             self.badgeButton.hidden = YES;
         } else {
@@ -227,7 +227,7 @@
             [self.badgeButton setTitle:badgeStr forState:UIControlStateNormal];
             self.badgeButton.hidden = NO;
         }
-    } else if (self.badgeStyle == YHJTabItemBadgeStyleDot) {
+    } else if (self.badgeStyle == MRJ_TabItemBadgeStyleDot) {
         [self.badgeButton setTitle:nil forState:UIControlStateNormal];
         self.badgeButton.frame = CGRectMake(self.bounds.size.width - self.dotBadgeCenterMarginRight - self.dotBadgeSideLength,
                                             self.dotBadgeMarginTop,
