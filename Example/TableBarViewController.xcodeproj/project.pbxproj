@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0AF3ADD21F645A5E0046DE4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF3ADD11F645A5E0046DE4A /* main.m */; };
+		0AF3ADD51F645A5E0046DE4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF3ADD41F645A5E0046DE4A /* AppDelegate.m */; };
+		0AF3ADD81F645A5E0046DE4A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF3ADD71F645A5E0046DE4A /* ViewController.m */; };
+		0AF3ADDB1F645A5E0046DE4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF3ADD91F645A5E0046DE4A /* Main.storyboard */; };
+		0AF3ADDD1F645A5E0046DE4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF3ADDC1F645A5E0046DE4A /* Assets.xcassets */; };
+		0AF3ADE81F645A5E0046DE4A /* TVTableViewControolerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF3ADE71F645A5E0046DE4A /* TVTableViewControolerTests.m */; };
+		0AF3ADF31F645A5E0046DE4A /* TVTableViewControolerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF3ADF21F645A5E0046DE4A /* TVTableViewControolerUITests.m */; };
 		0AFB08CC1F5BBE1A0072A8E0 /* MRJ_BarViewController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0AFB08CB1F5BBE1A0072A8E0 /* MRJ_BarViewController.podspec */; };
 		0AFB08CF1F5C136A0072A8E0 /* RunTimeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFB08CE1F5C136A0072A8E0 /* RunTimeObject.m */; };
 		1BEEB77883F8CD552E8FF212 /* Pods_TableBarViewController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5556988B3F096CF43321ADA /* Pods_TableBarViewController_Example.framework */; };
@@ -29,6 +36,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		0AF3ADE41F645A5E0046DE4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AF3ADCD1F645A5E0046DE4A;
+			remoteInfo = TVTableViewControoler;
+		};
+		0AF3ADEF1F645A5E0046DE4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6003F582195388D10070C39A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0AF3ADCD1F645A5E0046DE4A;
+			remoteInfo = TVTableViewControoler;
+		};
 		6003F5B3195388D20070C39A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 6003F582195388D10070C39A /* Project object */;
@@ -39,6 +60,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0AF3ADCE1F645A5E0046DE4A /* TVTableViewControoler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVTableViewControoler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AF3ADD11F645A5E0046DE4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0AF3ADD31F645A5E0046DE4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0AF3ADD41F645A5E0046DE4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0AF3ADD61F645A5E0046DE4A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0AF3ADD71F645A5E0046DE4A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0AF3ADDA1F645A5E0046DE4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0AF3ADDC1F645A5E0046DE4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0AF3ADDE1F645A5E0046DE4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AF3ADE31F645A5E0046DE4A /* TVTableViewControolerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVTableViewControolerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AF3ADE71F645A5E0046DE4A /* TVTableViewControolerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVTableViewControolerTests.m; sourceTree = "<group>"; };
+		0AF3ADE91F645A5E0046DE4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AF3ADEE1F645A5E0046DE4A /* TVTableViewControolerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVTableViewControolerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AF3ADF21F645A5E0046DE4A /* TVTableViewControolerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVTableViewControolerUITests.m; sourceTree = "<group>"; };
+		0AF3ADF41F645A5E0046DE4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AFB08CB1F5BBE1A0072A8E0 /* MRJ_BarViewController.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = MRJ_BarViewController.podspec; path = ../MRJ_BarViewController.podspec; sourceTree = "<group>"; };
 		0AFB08CD1F5C136A0072A8E0 /* RunTimeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTimeObject.h; sourceTree = "<group>"; };
 		0AFB08CE1F5C136A0072A8E0 /* RunTimeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeObject.m; sourceTree = "<group>"; };
@@ -74,6 +110,27 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0AF3ADCB1F645A5E0046DE4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AF3ADE01F645A5E0046DE4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AF3ADEB1F645A5E0046DE4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F587195388D20070C39A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -99,6 +156,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AF3ADCF1F645A5E0046DE4A /* TVTableViewControoler */ = {
+			isa = PBXGroup;
+			children = (
+				0AF3ADD31F645A5E0046DE4A /* AppDelegate.h */,
+				0AF3ADD41F645A5E0046DE4A /* AppDelegate.m */,
+				0AF3ADD61F645A5E0046DE4A /* ViewController.h */,
+				0AF3ADD71F645A5E0046DE4A /* ViewController.m */,
+				0AF3ADD91F645A5E0046DE4A /* Main.storyboard */,
+				0AF3ADDC1F645A5E0046DE4A /* Assets.xcassets */,
+				0AF3ADDE1F645A5E0046DE4A /* Info.plist */,
+				0AF3ADD01F645A5E0046DE4A /* Supporting Files */,
+			);
+			path = TVTableViewControoler;
+			sourceTree = "<group>";
+		};
+		0AF3ADD01F645A5E0046DE4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AF3ADD11F645A5E0046DE4A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0AF3ADE61F645A5E0046DE4A /* TVTableViewControolerTests */ = {
+			isa = PBXGroup;
+			children = (
+				0AF3ADE71F645A5E0046DE4A /* TVTableViewControolerTests.m */,
+				0AF3ADE91F645A5E0046DE4A /* Info.plist */,
+			);
+			path = TVTableViewControolerTests;
+			sourceTree = "<group>";
+		};
+		0AF3ADF11F645A5E0046DE4A /* TVTableViewControolerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0AF3ADF21F645A5E0046DE4A /* TVTableViewControolerUITests.m */,
+				0AF3ADF41F645A5E0046DE4A /* Info.plist */,
+			);
+			path = TVTableViewControolerUITests;
+			sourceTree = "<group>";
+		};
 		0BC2685313FE4F2E97E7359F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +214,9 @@
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for TableBarViewController */,
 				6003F5B5195388D20070C39A /* Tests */,
+				0AF3ADCF1F645A5E0046DE4A /* TVTableViewControoler */,
+				0AF3ADE61F645A5E0046DE4A /* TVTableViewControolerTests */,
+				0AF3ADF11F645A5E0046DE4A /* TVTableViewControolerUITests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				0BC2685313FE4F2E97E7359F /* Pods */,
@@ -127,6 +228,9 @@
 			children = (
 				6003F58A195388D20070C39A /* TableBarViewController_Example.app */,
 				6003F5AE195388D20070C39A /* TableBarViewController_Tests.xctest */,
+				0AF3ADCE1F645A5E0046DE4A /* TVTableViewControoler.app */,
+				0AF3ADE31F645A5E0046DE4A /* TVTableViewControolerTests.xctest */,
+				0AF3ADEE1F645A5E0046DE4A /* TVTableViewControolerUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -205,6 +309,59 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0AF3ADCD1F645A5E0046DE4A /* TVTableViewControoler */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AF3ADFB1F645A5E0046DE4A /* Build configuration list for PBXNativeTarget "TVTableViewControoler" */;
+			buildPhases = (
+				0AF3ADCA1F645A5E0046DE4A /* Sources */,
+				0AF3ADCB1F645A5E0046DE4A /* Frameworks */,
+				0AF3ADCC1F645A5E0046DE4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TVTableViewControoler;
+			productName = TVTableViewControoler;
+			productReference = 0AF3ADCE1F645A5E0046DE4A /* TVTableViewControoler.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0AF3ADE21F645A5E0046DE4A /* TVTableViewControolerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AF3ADFC1F645A5E0046DE4A /* Build configuration list for PBXNativeTarget "TVTableViewControolerTests" */;
+			buildPhases = (
+				0AF3ADDF1F645A5E0046DE4A /* Sources */,
+				0AF3ADE01F645A5E0046DE4A /* Frameworks */,
+				0AF3ADE11F645A5E0046DE4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AF3ADE51F645A5E0046DE4A /* PBXTargetDependency */,
+			);
+			name = TVTableViewControolerTests;
+			productName = TVTableViewControolerTests;
+			productReference = 0AF3ADE31F645A5E0046DE4A /* TVTableViewControolerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0AF3ADED1F645A5E0046DE4A /* TVTableViewControolerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AF3ADFD1F645A5E0046DE4A /* Build configuration list for PBXNativeTarget "TVTableViewControolerUITests" */;
+			buildPhases = (
+				0AF3ADEA1F645A5E0046DE4A /* Sources */,
+				0AF3ADEB1F645A5E0046DE4A /* Frameworks */,
+				0AF3ADEC1F645A5E0046DE4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0AF3ADF01F645A5E0046DE4A /* PBXTargetDependency */,
+			);
+			name = TVTableViewControolerUITests;
+			productName = TVTableViewControolerUITests;
+			productReference = 0AF3ADEE1F645A5E0046DE4A /* TVTableViewControolerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		6003F589195388D20070C39A /* TableBarViewController_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "TableBarViewController_Example" */;
@@ -256,6 +413,20 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = mrjyuhongjiang;
 				TargetAttributes = {
+					0AF3ADCD1F645A5E0046DE4A = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					0AF3ADE21F645A5E0046DE4A = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0AF3ADCD1F645A5E0046DE4A;
+					};
+					0AF3ADED1F645A5E0046DE4A = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0AF3ADCD1F645A5E0046DE4A;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -276,11 +447,37 @@
 			targets = (
 				6003F589195388D20070C39A /* TableBarViewController_Example */,
 				6003F5AD195388D20070C39A /* TableBarViewController_Tests */,
+				0AF3ADCD1F645A5E0046DE4A /* TVTableViewControoler */,
+				0AF3ADE21F645A5E0046DE4A /* TVTableViewControolerTests */,
+				0AF3ADED1F645A5E0046DE4A /* TVTableViewControolerUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0AF3ADCC1F645A5E0046DE4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF3ADDD1F645A5E0046DE4A /* Assets.xcassets in Resources */,
+				0AF3ADDB1F645A5E0046DE4A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AF3ADE11F645A5E0046DE4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AF3ADEC1F645A5E0046DE4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F588195388D20070C39A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -397,6 +594,32 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0AF3ADCA1F645A5E0046DE4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF3ADD81F645A5E0046DE4A /* ViewController.m in Sources */,
+				0AF3ADD51F645A5E0046DE4A /* AppDelegate.m in Sources */,
+				0AF3ADD21F645A5E0046DE4A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AF3ADDF1F645A5E0046DE4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF3ADE81F645A5E0046DE4A /* TVTableViewControolerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0AF3ADEA1F645A5E0046DE4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AF3ADF31F645A5E0046DE4A /* TVTableViewControolerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6003F586195388D20070C39A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -419,6 +642,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		0AF3ADE51F645A5E0046DE4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AF3ADCD1F645A5E0046DE4A /* TVTableViewControoler */;
+			targetProxy = 0AF3ADE41F645A5E0046DE4A /* PBXContainerItemProxy */;
+		};
+		0AF3ADF01F645A5E0046DE4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0AF3ADCD1F645A5E0046DE4A /* TVTableViewControoler */;
+			targetProxy = 0AF3ADEF1F645A5E0046DE4A /* PBXContainerItemProxy */;
+		};
 		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 6003F589195388D20070C39A /* TableBarViewController_Example */;
@@ -427,6 +660,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		0AF3ADD91F645A5E0046DE4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AF3ADDA1F645A5E0046DE4A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
 		6003F596195388D20070C39A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -454,6 +695,153 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0AF3ADF51F645A5E0046DE4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = TVTableViewControoler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = MRJ.TVTableViewControoler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		0AF3ADF61F645A5E0046DE4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = TVTableViewControoler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = MRJ.TVTableViewControoler;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		0AF3ADF71F645A5E0046DE4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = TVTableViewControolerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = MRJ.TVTableViewControolerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVTableViewControoler.app/TVTableViewControoler";
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		0AF3ADF81F645A5E0046DE4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = TVTableViewControolerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = MRJ.TVTableViewControolerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TVTableViewControoler.app/TVTableViewControoler";
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
+		0AF3ADF91F645A5E0046DE4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = TVTableViewControolerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = MRJ.TVTableViewControolerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_TARGET_NAME = TVTableViewControoler;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Debug;
+		};
+		0AF3ADFA1F645A5E0046DE4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = TVTableViewControolerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = MRJ.TVTableViewControolerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TEST_TARGET_NAME = TVTableViewControoler;
+				TVOS_DEPLOYMENT_TARGET = 10.2;
+			};
+			name = Release;
+		};
 		6003F5BD195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -604,6 +992,30 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0AF3ADFB1F645A5E0046DE4A /* Build configuration list for PBXNativeTarget "TVTableViewControoler" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AF3ADF51F645A5E0046DE4A /* Debug */,
+				0AF3ADF61F645A5E0046DE4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0AF3ADFC1F645A5E0046DE4A /* Build configuration list for PBXNativeTarget "TVTableViewControolerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AF3ADF71F645A5E0046DE4A /* Debug */,
+				0AF3ADF81F645A5E0046DE4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0AF3ADFD1F645A5E0046DE4A /* Build configuration list for PBXNativeTarget "TVTableViewControolerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AF3ADF91F645A5E0046DE4A /* Debug */,
+				0AF3ADFA1F645A5E0046DE4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		6003F585195388D10070C39A /* Build configuration list for PBXProject "TableBarViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

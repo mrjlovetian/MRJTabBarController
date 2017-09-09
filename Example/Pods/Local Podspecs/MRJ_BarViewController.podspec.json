@@ -1,9 +1,9 @@
 {
-  "name": "TableBarViewController",
-  "version": "0.1.2",
+  "name": "MRJ_BarViewController",
+  "version": "0.1.2.2",
   "summary": "TableBarViewController create with customer.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/mrjlovetian/MRJ_TabBarController",
+  "homepage": "https://github.com/mrjlovetian/YHJTabBarController",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
@@ -12,8 +12,8 @@
     "mrjyuhongjiang": "mrjyuhongjiang@gmail.com"
   },
   "source": {
-    "git": "https://github.com/mrjlovetian/MRJ_TabBarController.git",
-    "tag": "0.1.2"
+    "git": "https://github.com/mrjlovetian/YHJTabBarController.git",
+    "tag": "0.1.2.2"
   },
   "platforms": {
     "ios": "8.0",

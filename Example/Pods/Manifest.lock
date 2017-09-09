@@ -1,16 +1,16 @@
 PODS:
-  - TableBarViewController (0.1.2)
+  - MRJ_BarViewController (0.1.2.2)
 
 DEPENDENCIES:
-  - TableBarViewController (from `../`)
+  - MRJ_BarViewController (from `../`)
 
 EXTERNAL SOURCES:
-  TableBarViewController:
+  MRJ_BarViewController:
     :path: ../
 
 SPEC CHECKSUMS:
-  TableBarViewController: fd9dd6e492fea7f34ee53926212b125abc4de1be
+  MRJ_BarViewController: 670cf65e657c0bfbdf28713a30d2afa21d9c42b2
 
-PODFILE CHECKSUM: 67bb354a9c0e7ad5bdb4d21ffc02d33c366748c6
+PODFILE CHECKSUM: dd3fbcb537170816aec1f0c2a57c0a8545115fa2
 
 COCOAPODS: 1.1.1

@@ -1,6 +1,0 @@
-framework module TableBarViewController {
-  umbrella header "TableBarViewController-umbrella.h"
-
-  export *
-  module * { export * }
-}

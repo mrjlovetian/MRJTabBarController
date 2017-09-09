@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## TableBarViewController
+## MRJ_BarViewController
 
 Copyright (c) 2017 mrjyuhongjiang <mrjyuhongjiang@gmail.com>
 

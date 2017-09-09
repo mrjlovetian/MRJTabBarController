@@ -7,62 +7,60 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		19D0995E06B8A2A25223E42D94DB358A /* Pods-TableBarViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E44A71ABB30FE70518C5FC15E838624A /* Pods-TableBarViewController_Example-dummy.m */; };
+		27F51B38339EEF78D311E91B92E008B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		2F22CDFE4FEC13310C4591186B431783 /* MRJ_TabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 902B05DEB8DBC110F6EC5BD890EA1D29 /* MRJ_TabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40169CEAB755DB187B47EBF27F390380 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		42D1DBF7FD4157F47D8EC833ACF9FB66 /* MRJ_TabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 6F8D1358BF2C411F71722699155C871D /* MRJ_TabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		709F66C15256DD39D024B9626AB603E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		84989831D7FBBD1D2088E235F0F2E64E /* MRJ_TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A830287E8108BA920611795C2BF9F9FD /* MRJ_TabBar.m */; };
-		927ABEA7081C5ABF7E92D397A4181BAD /* MRJ_TabItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 81BD069DF9794E4CE650C26591566E05 /* MRJ_TabItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4F9BB12507369386D0FFDCFD1B83AD5F /* Pods-TableBarViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CCA56A3AF134D04A183942305764981 /* Pods-TableBarViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6AFF6548FFFDB034CE80C2DF642A9509 /* MRJ_TabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 647C9E8A452813FAA8809F930521B612 /* MRJ_TabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7915102B0E0458576246E3CE177E6B0C /* MRJ_TabItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A71F7F60399B25608DC9B914F246AF /* MRJ_TabItem.m */; };
+		8A683ADA0FEE4C4BABBFBA33D8CF798E /* MRJ_TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = ECFB4FFCE432EAC327FBFDF5C98F9882 /* MRJ_TabBar.m */; };
+		958119065D9ADA0187A24F72A2CFD4CD /* MRJ_TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F0472DD9071001760609B39EE084AD /* MRJ_TabBarController.m */; };
 		9711670864F57ABC51EFDBC32A267B42 /* Pods-TableBarViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B94303367F64574741730798931D465 /* Pods-TableBarViewController_Tests-dummy.m */; };
 		9DB21C491C3229D22576CF92A0AE86E5 /* Pods-TableBarViewController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7482291E86EBF5A97BAFC8D21F1CA091 /* Pods-TableBarViewController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B83386C9969DE9FAC32CD1FACA7B8865 /* MRJ_TabItem.m in Sources */ = {isa = PBXBuildFile; fileRef = C7C3B6E311DC28FE1AC7C3D3DE38224C /* MRJ_TabItem.m */; };
-		C4B0693BADBF4EE921372C3BB0A3FC75 /* MRJ_TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AA6A8BC8B886DD51A4F8E4B1DA69971 /* MRJ_TabBarController.m */; };
-		D05143C0A3DED353786B961D901195E9 /* TableBarViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BD5DEED15621FA7CAEEE6A43BD9A8307 /* TableBarViewController-dummy.m */; };
-		D2B2F6E37122ECA55B3BD819A32EFDB6 /* Pods-TableBarViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CCA56A3AF134D04A183942305764981 /* Pods-TableBarViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F59DC5DA2D5F7DFAC63EB1E0C3DCBE3B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		FF8EE34039254C82DFFB819674E08A76 /* MRJ_TabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 18AF30CA9630DBAE31F00C4C3C893316 /* MRJ_TabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FFC93ECE778C4E5E746476D1B2B987D9 /* TableBarViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A377016AE2E1C42A9B5E9E12F6802C9C /* TableBarViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD2F9CBD5C90A39844A414A36965E379 /* MRJ_BarViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5761F1D60129AA3501529B0F9C152221 /* MRJ_BarViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD64828E9CAADE58996A6E2D047EC174 /* MRJ_BarViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E18CB2B2D5B2026C4D23A0277ED457 /* MRJ_BarViewController-dummy.m */; };
+		B01EF8BBA94EBCAAF80AE2A78FA294EB /* Pods-TableBarViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E44A71ABB30FE70518C5FC15E838624A /* Pods-TableBarViewController_Example-dummy.m */; };
+		D555CF096F0D8CE39E330D1CDE2EA077 /* MRJ_TabItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F8FF6A6AEF78C49EC57C9A2D132B1A0A /* MRJ_TabItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEBC5565B627165A0ABDB3F4A38B899E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		32C442C21C7CDAC5C017D71D5B32255A /* PBXContainerItemProxy */ = {
+		E097FE4C367BD3E8C915C5ED5E91B87A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 17D0EBA3F83563DE3AB35C70A8C8F5B5;
-			remoteInfo = TableBarViewController;
+			remoteGlobalIDString = 14652C0FDC56B19B9970948EEC3B70DD;
+			remoteInfo = MRJ_BarViewController;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		18AF30CA9630DBAE31F00C4C3C893316 /* MRJ_TabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MRJ_TabBarController.h; sourceTree = "<group>"; };
-		191C0B1B0CAFD8467883D33D9B097826 /* TableBarViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = TableBarViewController.modulemap; sourceTree = "<group>"; };
 		1BA75F16395C6E25910D705F38D30A49 /* Pods-TableBarViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TableBarViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		27B76DF75FAC33ECBD97755F3B719D28 /* TableBarViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TableBarViewController-prefix.pch"; sourceTree = "<group>"; };
 		2A548012B7801027A396A73603FD59C3 /* Pods-TableBarViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TableBarViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3B94303367F64574741730798931D465 /* Pods-TableBarViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TableBarViewController_Tests-dummy.m"; sourceTree = "<group>"; };
+		3FABAF835F2CBD61345732F02D8CB29E /* Pods_TableBarViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TableBarViewController_Tests.framework; path = "Pods-TableBarViewController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CCA56A3AF134D04A183942305764981 /* Pods-TableBarViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TableBarViewController_Example-umbrella.h"; sourceTree = "<group>"; };
-		502183435E0011B6891D3B18E1FC6DD0 /* Pods_TableBarViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TableBarViewController_Tests.framework; path = "Pods-TableBarViewController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52E18CB2B2D5B2026C4D23A0277ED457 /* MRJ_BarViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MRJ_BarViewController-dummy.m"; sourceTree = "<group>"; };
 		53BFB99BA5DC5B88B14C00BD2A2A6621 /* Pods-TableBarViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TableBarViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
-		570898D168A9574B1B766BFCC29BEE8A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5761F1D60129AA3501529B0F9C152221 /* MRJ_BarViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MRJ_BarViewController-umbrella.h"; sourceTree = "<group>"; };
 		5AAC8E2B98887E30A2BF15CBA8BF1833 /* Pods-TableBarViewController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TableBarViewController_Example-resources.sh"; sourceTree = "<group>"; };
-		6F8D1358BF2C411F71722699155C871D /* MRJ_TabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MRJ_TabBar.h; sourceTree = "<group>"; };
+		5EA111AD84532E2E4374FB994BD5CA8F /* MRJ_BarViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MRJ_BarViewController.framework; path = MRJ_BarViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		647C9E8A452813FAA8809F930521B612 /* MRJ_TabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MRJ_TabBarController.h; sourceTree = "<group>"; };
 		7482291E86EBF5A97BAFC8D21F1CA091 /* Pods-TableBarViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TableBarViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
-		81BD069DF9794E4CE650C26591566E05 /* MRJ_TabItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MRJ_TabItem.h; sourceTree = "<group>"; };
-		8AA6A8BC8B886DD51A4F8E4B1DA69971 /* MRJ_TabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MRJ_TabBarController.m; sourceTree = "<group>"; };
-		8EC574E1A6C57ADACEA7ACFC4BE4E65D /* TableBarViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = TableBarViewController.framework; path = TableBarViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87402E3466ED94B361B4223E857EF356 /* Pods_TableBarViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TableBarViewController_Example.framework; path = "Pods-TableBarViewController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		87A71F7F60399B25608DC9B914F246AF /* MRJ_TabItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MRJ_TabItem.m; sourceTree = "<group>"; };
+		902B05DEB8DBC110F6EC5BD890EA1D29 /* MRJ_TabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MRJ_TabBar.h; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9440C2A675A72099C08E6D2E96D75F28 /* MRJ_BarViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MRJ_BarViewController.modulemap; sourceTree = "<group>"; };
+		94F0472DD9071001760609B39EE084AD /* MRJ_TabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MRJ_TabBarController.m; sourceTree = "<group>"; };
 		9E71CB96DEB69C7398556489D7D53B79 /* Pods-TableBarViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TableBarViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A00D3DCA33600375630E8FC5962B660A /* Pods-TableBarViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TableBarViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		A2D5825C413F9136E88C0EB8B8504CA4 /* TableBarViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = TableBarViewController.xcconfig; sourceTree = "<group>"; };
-		A377016AE2E1C42A9B5E9E12F6802C9C /* TableBarViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "TableBarViewController-umbrella.h"; sourceTree = "<group>"; };
-		A830287E8108BA920611795C2BF9F9FD /* MRJ_TabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MRJ_TabBar.m; sourceTree = "<group>"; };
 		A9878971AB71E2F735767F23C7635CB4 /* Pods-TableBarViewController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TableBarViewController_Tests-resources.sh"; sourceTree = "<group>"; };
+		AEA9BFF49AF33DD4122B77912DD3B852 /* MRJ_BarViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MRJ_BarViewController-prefix.pch"; sourceTree = "<group>"; };
 		B9A5305BD04CE30B8DB1FBE56F921837 /* Pods-TableBarViewController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TableBarViewController_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		BD5DEED15621FA7CAEEE6A43BD9A8307 /* TableBarViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "TableBarViewController-dummy.m"; sourceTree = "<group>"; };
-		C7C3B6E311DC28FE1AC7C3D3DE38224C /* MRJ_TabItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MRJ_TabItem.m; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D201CFD0E7602D26B7122C15CEF49BFD /* Pods_TableBarViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TableBarViewController_Example.framework; path = "Pods-TableBarViewController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D550754580BA365FA3028043A2C2C921 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D78C0D80236530CF8BEC5BAAC05FB5E9 /* MRJ_BarViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MRJ_BarViewController.xcconfig; sourceTree = "<group>"; };
 		D8FAA6693AA4C3D70836D8C73878905E /* Pods-TableBarViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TableBarViewController_Example.modulemap"; sourceTree = "<group>"; };
 		DCA3C184DEF47BAAA135DBE041DB12FD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1BE723222760AF26E5192EB5009DD06 /* Pods-TableBarViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TableBarViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -70,16 +68,18 @@
 		E61BB69B79E52DC58F7D54BC92B157AD /* Pods-TableBarViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TableBarViewController_Tests.modulemap"; sourceTree = "<group>"; };
 		EB93FAF16B0F147222F156173B289314 /* Pods-TableBarViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TableBarViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		ECBD025B37509415E3B3EA377CD32819 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ECFB4FFCE432EAC327FBFDF5C98F9882 /* MRJ_TabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MRJ_TabBar.m; sourceTree = "<group>"; };
 		F00C67782BDDABC448A9938050C33ED9 /* Pods-TableBarViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TableBarViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F0A3EBD9A7EE1E905FA8CD2A31DF3826 /* Pods-TableBarViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TableBarViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
+		F8FF6A6AEF78C49EC57C9A2D132B1A0A /* MRJ_TabItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MRJ_TabItem.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		79173EA9FDBE278EF04D70AC24BBEEF0 /* Frameworks */ = {
+		754E554FAA3628CDEFD3C5315B6DE08C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F59DC5DA2D5F7DFAC63EB1E0C3DCBE3B /* Foundation.framework in Frameworks */,
+				27F51B38339EEF78D311E91B92E008B1 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,17 +91,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		FBE153623D72FF56AAA92963C9F28302 /* Frameworks */ = {
+		B5278C3CD9A43CDDF9FF28C7EE8B86E4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				709F66C15256DD39D024B9626AB603E1 /* Foundation.framework in Frameworks */,
+				DEBC5565B627165A0ABDB3F4A38B899E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1ECD4FE160A6723D650B3A8D41C587FA /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				902B05DEB8DBC110F6EC5BD890EA1D29 /* MRJ_TabBar.h */,
+				ECFB4FFCE432EAC327FBFDF5C98F9882 /* MRJ_TabBar.m */,
+				647C9E8A452813FAA8809F930521B612 /* MRJ_TabBarController.h */,
+				94F0472DD9071001760609B39EE084AD /* MRJ_TabBarController.m */,
+				F8FF6A6AEF78C49EC57C9A2D132B1A0A /* MRJ_TabItem.h */,
+				87A71F7F60399B25608DC9B914F246AF /* MRJ_TabItem.m */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		2580CEAF6AD5FCE2BE8BCAFB3BBA845C /* Pods-TableBarViewController_Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -120,27 +134,14 @@
 			path = "Target Support Files/Pods-TableBarViewController_Tests";
 			sourceTree = "<group>";
 		};
-		4D0BF437B9ED6470EE3B328F05283FB8 /* TableBarViewController */ = {
+		5F4622E915F195ADEF6BB57D79C75EAD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				979AA0E71323091A42554C5AAC9EDF2C /* Classes */,
+				5EA111AD84532E2E4374FB994BD5CA8F /* MRJ_BarViewController.framework */,
+				87402E3466ED94B361B4223E857EF356 /* Pods_TableBarViewController_Example.framework */,
+				3FABAF835F2CBD61345732F02D8CB29E /* Pods_TableBarViewController_Tests.framework */,
 			);
-			name = TableBarViewController;
-			path = TableBarViewController;
-			sourceTree = "<group>";
-		};
-		530CF14B5CD6CC0788AB35A003F7D6F1 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				570898D168A9574B1B766BFCC29BEE8A /* Info.plist */,
-				191C0B1B0CAFD8467883D33D9B097826 /* TableBarViewController.modulemap */,
-				A2D5825C413F9136E88C0EB8B8504CA4 /* TableBarViewController.xcconfig */,
-				BD5DEED15621FA7CAEEE6A43BD9A8307 /* TableBarViewController-dummy.m */,
-				27B76DF75FAC33ECBD97755F3B719D28 /* TableBarViewController-prefix.pch */,
-				A377016AE2E1C42A9B5E9E12F6802C9C /* TableBarViewController-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/TableBarViewController";
+			name = Products;
 			sourceTree = "<group>";
 		};
 		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
@@ -155,35 +156,25 @@
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				E8146DFDCD9DEBA0E4431452185795D4 /* Development Pods */,
+				AA8C45A5CDA84BBBA422D419B1DE5608 /* Development Pods */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				9A68B19775F59122CB70F12AC14B0033 /* Products */,
+				5F4622E915F195ADEF6BB57D79C75EAD /* Products */,
 				9E03E6761E8AAC76D17D77BBB885075F /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		979AA0E71323091A42554C5AAC9EDF2C /* Classes */ = {
+		9374A93EECD40CEB7CAB073AAFA03CDF /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				6F8D1358BF2C411F71722699155C871D /* MRJ_TabBar.h */,
-				A830287E8108BA920611795C2BF9F9FD /* MRJ_TabBar.m */,
-				18AF30CA9630DBAE31F00C4C3C893316 /* MRJ_TabBarController.h */,
-				8AA6A8BC8B886DD51A4F8E4B1DA69971 /* MRJ_TabBarController.m */,
-				81BD069DF9794E4CE650C26591566E05 /* MRJ_TabItem.h */,
-				C7C3B6E311DC28FE1AC7C3D3DE38224C /* MRJ_TabItem.m */,
+				D550754580BA365FA3028043A2C2C921 /* Info.plist */,
+				9440C2A675A72099C08E6D2E96D75F28 /* MRJ_BarViewController.modulemap */,
+				D78C0D80236530CF8BEC5BAAC05FB5E9 /* MRJ_BarViewController.xcconfig */,
+				52E18CB2B2D5B2026C4D23A0277ED457 /* MRJ_BarViewController-dummy.m */,
+				AEA9BFF49AF33DD4122B77912DD3B852 /* MRJ_BarViewController-prefix.pch */,
+				5761F1D60129AA3501529B0F9C152221 /* MRJ_BarViewController-umbrella.h */,
 			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		9A68B19775F59122CB70F12AC14B0033 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				D201CFD0E7602D26B7122C15CEF49BFD /* Pods_TableBarViewController_Example.framework */,
-				502183435E0011B6891D3B18E1FC6DD0 /* Pods_TableBarViewController_Tests.framework */,
-				8EC574E1A6C57ADACEA7ACFC4BE4E65D /* TableBarViewController.framework */,
-			);
-			name = Products;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/MRJ_BarViewController";
 			sourceTree = "<group>";
 		};
 		9E03E6761E8AAC76D17D77BBB885075F /* Targets Support Files */ = {
@@ -195,22 +186,20 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		AA8C45A5CDA84BBBA422D419B1DE5608 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E1AE43D8FAEBA8E624AB5D0384E2EF6A /* MRJ_BarViewController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D9E0C30A9B0E87D6679F1A84BFF00983 /* TableBarViewController */ = {
-			isa = PBXGroup;
-			children = (
-				530CF14B5CD6CC0788AB35A003F7D6F1 /* Support Files */,
-				4D0BF437B9ED6470EE3B328F05283FB8 /* TableBarViewController */,
-			);
-			name = TableBarViewController;
-			path = ../..;
 			sourceTree = "<group>";
 		};
 		DB4387A97E0242B3D6100229E391428C /* Pods-TableBarViewController_Example */ = {
@@ -231,28 +220,28 @@
 			path = "Target Support Files/Pods-TableBarViewController_Example";
 			sourceTree = "<group>";
 		};
-		E8146DFDCD9DEBA0E4431452185795D4 /* Development Pods */ = {
+		E1AE43D8FAEBA8E624AB5D0384E2EF6A /* MRJ_BarViewController */ = {
 			isa = PBXGroup;
 			children = (
-				D9E0C30A9B0E87D6679F1A84BFF00983 /* TableBarViewController */,
+				9374A93EECD40CEB7CAB073AAFA03CDF /* Support Files */,
+				EB6D80165C6E258C528A6FAAA4D6DBF3 /* TableBarViewController */,
 			);
-			name = "Development Pods";
+			name = MRJ_BarViewController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		EB6D80165C6E258C528A6FAAA4D6DBF3 /* TableBarViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1ECD4FE160A6723D650B3A8D41C587FA /* Classes */,
+			);
+			name = TableBarViewController;
+			path = TableBarViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		073B3BA2EE1A6B6CB823F045718795EB /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				42D1DBF7FD4157F47D8EC833ACF9FB66 /* MRJ_TabBar.h in Headers */,
-				FF8EE34039254C82DFFB819674E08A76 /* MRJ_TabBarController.h in Headers */,
-				927ABEA7081C5ABF7E92D397A4181BAD /* MRJ_TabItem.h in Headers */,
-				FFC93ECE778C4E5E746476D1B2B987D9 /* TableBarViewController-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		0BDED3FE2C3E16BD23D8506CF895EF51 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -261,32 +250,61 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		79C64BA179E9F8ED182DE6E0F9C08E68 /* Headers */ = {
+		8521FA467FC863FC7582DE1035730E2B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2B2F6E37122ECA55B3BD819A32EFDB6 /* Pods-TableBarViewController_Example-umbrella.h in Headers */,
+				AD2F9CBD5C90A39844A414A36965E379 /* MRJ_BarViewController-umbrella.h in Headers */,
+				2F22CDFE4FEC13310C4591186B431783 /* MRJ_TabBar.h in Headers */,
+				6AFF6548FFFDB034CE80C2DF642A9509 /* MRJ_TabBarController.h in Headers */,
+				D555CF096F0D8CE39E330D1CDE2EA077 /* MRJ_TabItem.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5890691948D0D12B3C957986B48F544 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F9BB12507369386D0FFDCFD1B83AD5F /* Pods-TableBarViewController_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		17D0EBA3F83563DE3AB35C70A8C8F5B5 /* TableBarViewController */ = {
+		14652C0FDC56B19B9970948EEC3B70DD /* MRJ_BarViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 48674432768145D06A199D551133DFA5 /* Build configuration list for PBXNativeTarget "TableBarViewController" */;
+			buildConfigurationList = F9CFEA8431E35C16FB9BFABB13E7AEAB /* Build configuration list for PBXNativeTarget "MRJ_BarViewController" */;
 			buildPhases = (
-				410B0AD33CC4829151FBFBEF06A4A92D /* Sources */,
-				79173EA9FDBE278EF04D70AC24BBEEF0 /* Frameworks */,
-				073B3BA2EE1A6B6CB823F045718795EB /* Headers */,
+				B57D077AB78474F74C9B1AF15361C34B /* Sources */,
+				B5278C3CD9A43CDDF9FF28C7EE8B86E4 /* Frameworks */,
+				8521FA467FC863FC7582DE1035730E2B /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = TableBarViewController;
-			productName = TableBarViewController;
-			productReference = 8EC574E1A6C57ADACEA7ACFC4BE4E65D /* TableBarViewController.framework */;
+			name = MRJ_BarViewController;
+			productName = MRJ_BarViewController;
+			productReference = 5EA111AD84532E2E4374FB994BD5CA8F /* MRJ_BarViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		19C745877734F26580A95FE54870391D /* Pods-TableBarViewController_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D5AE5ECE0E452AA86C108DB39C41423 /* Build configuration list for PBXNativeTarget "Pods-TableBarViewController_Example" */;
+			buildPhases = (
+				E29FE559B59D92DA5A699BE6E620C735 /* Sources */,
+				754E554FAA3628CDEFD3C5315B6DE08C /* Frameworks */,
+				B5890691948D0D12B3C957986B48F544 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2250C0748121D6A7DDB0475FEEFDADA7 /* PBXTargetDependency */,
+			);
+			name = "Pods-TableBarViewController_Example";
+			productName = "Pods-TableBarViewController_Example";
+			productReference = 87402E3466ED94B361B4223E857EF356 /* Pods_TableBarViewController_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		79553E0D2020BEA25D06DA85D1565BB4 /* Pods-TableBarViewController_Tests */ = {
@@ -303,25 +321,7 @@
 			);
 			name = "Pods-TableBarViewController_Tests";
 			productName = "Pods-TableBarViewController_Tests";
-			productReference = 502183435E0011B6891D3B18E1FC6DD0 /* Pods_TableBarViewController_Tests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		BC08F2FCA5CA524E8DF0255068F08C6C /* Pods-TableBarViewController_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 478F7A78A30B06E8450F880CC7C44D0B /* Build configuration list for PBXNativeTarget "Pods-TableBarViewController_Example" */;
-			buildPhases = (
-				D4F9CF72C233A38FDD39084B37B1D616 /* Sources */,
-				FBE153623D72FF56AAA92963C9F28302 /* Frameworks */,
-				79C64BA179E9F8ED182DE6E0F9C08E68 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F236C3354B2A8255A6B5969E7F3833AB /* PBXTargetDependency */,
-			);
-			name = "Pods-TableBarViewController_Example";
-			productName = "Pods-TableBarViewController_Example";
-			productReference = D201CFD0E7602D26B7122C15CEF49BFD /* Pods_TableBarViewController_Example.framework */;
+			productReference = 3FABAF835F2CBD61345732F02D8CB29E /* Pods_TableBarViewController_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -341,29 +341,18 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 9A68B19775F59122CB70F12AC14B0033 /* Products */;
+			productRefGroup = 5F4622E915F195ADEF6BB57D79C75EAD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BC08F2FCA5CA524E8DF0255068F08C6C /* Pods-TableBarViewController_Example */,
+				14652C0FDC56B19B9970948EEC3B70DD /* MRJ_BarViewController */,
+				19C745877734F26580A95FE54870391D /* Pods-TableBarViewController_Example */,
 				79553E0D2020BEA25D06DA85D1565BB4 /* Pods-TableBarViewController_Tests */,
-				17D0EBA3F83563DE3AB35C70A8C8F5B5 /* TableBarViewController */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		410B0AD33CC4829151FBFBEF06A4A92D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				84989831D7FBBD1D2088E235F0F2E64E /* MRJ_TabBar.m in Sources */,
-				C4B0693BADBF4EE921372C3BB0A3FC75 /* MRJ_TabBarController.m in Sources */,
-				B83386C9969DE9FAC32CD1FACA7B8865 /* MRJ_TabItem.m in Sources */,
-				D05143C0A3DED353786B961D901195E9 /* TableBarViewController-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		6487B314C0DF1DECB1761E52914FA6EA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -372,66 +361,46 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D4F9CF72C233A38FDD39084B37B1D616 /* Sources */ = {
+		B57D077AB78474F74C9B1AF15361C34B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				19D0995E06B8A2A25223E42D94DB358A /* Pods-TableBarViewController_Example-dummy.m in Sources */,
+				AD64828E9CAADE58996A6E2D047EC174 /* MRJ_BarViewController-dummy.m in Sources */,
+				8A683ADA0FEE4C4BABBFBA33D8CF798E /* MRJ_TabBar.m in Sources */,
+				958119065D9ADA0187A24F72A2CFD4CD /* MRJ_TabBarController.m in Sources */,
+				7915102B0E0458576246E3CE177E6B0C /* MRJ_TabItem.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E29FE559B59D92DA5A699BE6E620C735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B01EF8BBA94EBCAAF80AE2A78FA294EB /* Pods-TableBarViewController_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F236C3354B2A8255A6B5969E7F3833AB /* PBXTargetDependency */ = {
+		2250C0748121D6A7DDB0475FEEFDADA7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = TableBarViewController;
-			target = 17D0EBA3F83563DE3AB35C70A8C8F5B5 /* TableBarViewController */;
-			targetProxy = 32C442C21C7CDAC5C017D71D5B32255A /* PBXContainerItemProxy */;
+			name = MRJ_BarViewController;
+			target = 14652C0FDC56B19B9970948EEC3B70DD /* MRJ_BarViewController */;
+			targetProxy = E097FE4C367BD3E8C915C5ED5E91B87A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		27DF85C6010F3AA68519FC556B728774 /* Debug */ = {
+		3C4454FFFCFCBBF33BD1BFF7A8B40980 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2D5825C413F9136E88C0EB8B8504CA4 /* TableBarViewController.xcconfig */;
+			baseConfigurationReference = 53BFB99BA5DC5B88B14C00BD2A2A6621 /* Pods-TableBarViewController_Example.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TableBarViewController/TableBarViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TableBarViewController/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TableBarViewController/TableBarViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = TableBarViewController;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		360C7E3731751B574695552EEFE7F9E8 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EB93FAF16B0F147222F156173B289314 /* Pods-TableBarViewController_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -444,7 +413,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-TableBarViewController_Example/Pods-TableBarViewController_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -456,7 +425,69 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
+			name = Release;
+		};
+		43C99644443AF31E077C85F1C171547E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D78C0D80236530CF8BEC5BAAC05FB5E9 /* MRJ_BarViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MRJ_BarViewController/MRJ_BarViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MRJ_BarViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MRJ_BarViewController/MRJ_BarViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = MRJ_BarViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
 			name = Debug;
+		};
+		45ADDC00CFF8ECEBEB2EB33C3D2F7CD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D78C0D80236530CF8BEC5BAAC05FB5E9 /* MRJ_BarViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MRJ_BarViewController/MRJ_BarViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MRJ_BarViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/MRJ_BarViewController/MRJ_BarViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = MRJ_BarViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
 		};
 		59083F85BB4BDC28936E52DC9905E692 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -492,41 +523,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		8CAAFE547250B053DC1313A8E7901E54 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 53BFB99BA5DC5B88B14C00BD2A2A6621 /* Pods-TableBarViewController_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-TableBarViewController_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-TableBarViewController_Example/Pods-TableBarViewController_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_TableBarViewController_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -612,36 +608,40 @@
 			};
 			name = Debug;
 		};
-		B75DB9C9CF4DF2A818AFC969B7025537 /* Release */ = {
+		AB25EF4FA21075E083FF1853A56B4C61 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A2D5825C413F9136E88C0EB8B8504CA4 /* TableBarViewController.xcconfig */;
+			baseConfigurationReference = EB93FAF16B0F147222F156173B289314 /* Pods-TableBarViewController_Example.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/TableBarViewController/TableBarViewController-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/TableBarViewController/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-TableBarViewController_Example/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/TableBarViewController/TableBarViewController.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = TableBarViewController;
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-TableBarViewController_Example/Pods-TableBarViewController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_TableBarViewController_Example;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		EE32D13324A5A49ED17FBBA53B1022F0 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -690,20 +690,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		478F7A78A30B06E8450F880CC7C44D0B /* Build configuration list for PBXNativeTarget "Pods-TableBarViewController_Example" */ = {
+		4D5AE5ECE0E452AA86C108DB39C41423 /* Build configuration list for PBXNativeTarget "Pods-TableBarViewController_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				360C7E3731751B574695552EEFE7F9E8 /* Debug */,
-				8CAAFE547250B053DC1313A8E7901E54 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		48674432768145D06A199D551133DFA5 /* Build configuration list for PBXNativeTarget "TableBarViewController" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				27DF85C6010F3AA68519FC556B728774 /* Debug */,
-				B75DB9C9CF4DF2A818AFC969B7025537 /* Release */,
+				AB25EF4FA21075E083FF1853A56B4C61 /* Debug */,
+				3C4454FFFCFCBBF33BD1BFF7A8B40980 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -713,6 +704,15 @@
 			buildConfigurations = (
 				59083F85BB4BDC28936E52DC9905E692 /* Debug */,
 				EE32D13324A5A49ED17FBBA53B1022F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9CFEA8431E35C16FB9BFABB13E7AEAB /* Build configuration list for PBXNativeTarget "MRJ_BarViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43C99644443AF31E077C85F1C171547E /* Debug */,
+				45ADDC00CFF8ECEBEB2EB33C3D2F7CD8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

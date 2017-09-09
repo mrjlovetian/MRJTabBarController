@@ -45,7 +45,7 @@
     return objc_getAssociatedObject(self, _cmd);
 }
 
-- (void)setYhj_tabItemTitle:(NSString *)MRJ__tabItemTitle {
+- (void)setMRJ_tabItemTitle:(NSString *)MRJ__tabItemTitle {
     self.MRJ__tabItem.title = MRJ__tabItemTitle;
     objc_setAssociatedObject(self, @selector(MRJ__tabItemTitle), MRJ__tabItemTitle, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
@@ -54,7 +54,7 @@
     return objc_getAssociatedObject(self, _cmd);
 }
 
-- (void)setYhj_tabItemImage:(UIImage *)MRJ__tabItemImage {
+- (void)setMRJ_tabItemImage:(UIImage *)MRJ__tabItemImage {
     self.MRJ__tabItem.image = MRJ__tabItemImage;
     objc_setAssociatedObject(self, @selector(MRJ__tabItemImage), MRJ__tabItemImage, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
@@ -63,7 +63,7 @@
     return objc_getAssociatedObject(self, _cmd);
 }
 
-- (void)setYhj_tabItemSelectedImage:(UIImage *)MRJ__tabItemSelectedImage {
+- (void)setMRJ_tabItemSelectedImage:(UIImage *)MRJ__tabItemSelectedImage {
     self.MRJ__tabItem.selectedImage = MRJ__tabItemSelectedImage;
     objc_setAssociatedObject(self, @selector(MRJ__tabItemSelectedImage), MRJ__tabItemSelectedImage, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }

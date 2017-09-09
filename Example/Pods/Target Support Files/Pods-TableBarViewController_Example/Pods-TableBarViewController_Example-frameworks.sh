@@ -84,8 +84,8 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/TableBarViewController/TableBarViewController.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MRJ_BarViewController/MRJ_BarViewController.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "$BUILT_PRODUCTS_DIR/TableBarViewController/TableBarViewController.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/MRJ_BarViewController/MRJ_BarViewController.framework"
 fi
