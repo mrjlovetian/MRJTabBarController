@@ -7,13 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AF3ADD21F645A5E0046DE4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF3ADD11F645A5E0046DE4A /* main.m */; };
-		0AF3ADD51F645A5E0046DE4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF3ADD41F645A5E0046DE4A /* AppDelegate.m */; };
-		0AF3ADD81F645A5E0046DE4A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF3ADD71F645A5E0046DE4A /* ViewController.m */; };
-		0AF3ADDB1F645A5E0046DE4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AF3ADD91F645A5E0046DE4A /* Main.storyboard */; };
-		0AF3ADDD1F645A5E0046DE4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AF3ADDC1F645A5E0046DE4A /* Assets.xcassets */; };
-		0AF3ADE81F645A5E0046DE4A /* TVTableViewControolerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF3ADE71F645A5E0046DE4A /* TVTableViewControolerTests.m */; };
-		0AF3ADF31F645A5E0046DE4A /* TVTableViewControolerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AF3ADF21F645A5E0046DE4A /* TVTableViewControolerUITests.m */; };
 		0AFB08CC1F5BBE1A0072A8E0 /* MRJ_BarViewController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0AFB08CB1F5BBE1A0072A8E0 /* MRJ_BarViewController.podspec */; };
 		0AFB08CF1F5C136A0072A8E0 /* RunTimeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFB08CE1F5C136A0072A8E0 /* RunTimeObject.m */; };
 		1BEEB77883F8CD552E8FF212 /* Pods_TableBarViewController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5556988B3F096CF43321ADA /* Pods_TableBarViewController_Example.framework */; };
@@ -61,20 +54,8 @@
 
 /* Begin PBXFileReference section */
 		0AF3ADCE1F645A5E0046DE4A /* TVTableViewControoler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVTableViewControoler.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AF3ADD11F645A5E0046DE4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		0AF3ADD31F645A5E0046DE4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		0AF3ADD41F645A5E0046DE4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0AF3ADD61F645A5E0046DE4A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0AF3ADD71F645A5E0046DE4A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		0AF3ADDA1F645A5E0046DE4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0AF3ADDC1F645A5E0046DE4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0AF3ADDE1F645A5E0046DE4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AF3ADE31F645A5E0046DE4A /* TVTableViewControolerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVTableViewControolerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AF3ADE71F645A5E0046DE4A /* TVTableViewControolerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVTableViewControolerTests.m; sourceTree = "<group>"; };
-		0AF3ADE91F645A5E0046DE4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AF3ADEE1F645A5E0046DE4A /* TVTableViewControolerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVTableViewControolerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AF3ADF21F645A5E0046DE4A /* TVTableViewControolerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TVTableViewControolerUITests.m; sourceTree = "<group>"; };
-		0AF3ADF41F645A5E0046DE4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AFB08CB1F5BBE1A0072A8E0 /* MRJ_BarViewController.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = MRJ_BarViewController.podspec; path = ../MRJ_BarViewController.podspec; sourceTree = "<group>"; };
 		0AFB08CD1F5C136A0072A8E0 /* RunTimeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTimeObject.h; sourceTree = "<group>"; };
 		0AFB08CE1F5C136A0072A8E0 /* RunTimeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeObject.m; sourceTree = "<group>"; };
@@ -156,47 +137,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0AF3ADCF1F645A5E0046DE4A /* TVTableViewControoler */ = {
-			isa = PBXGroup;
-			children = (
-				0AF3ADD31F645A5E0046DE4A /* AppDelegate.h */,
-				0AF3ADD41F645A5E0046DE4A /* AppDelegate.m */,
-				0AF3ADD61F645A5E0046DE4A /* ViewController.h */,
-				0AF3ADD71F645A5E0046DE4A /* ViewController.m */,
-				0AF3ADD91F645A5E0046DE4A /* Main.storyboard */,
-				0AF3ADDC1F645A5E0046DE4A /* Assets.xcassets */,
-				0AF3ADDE1F645A5E0046DE4A /* Info.plist */,
-				0AF3ADD01F645A5E0046DE4A /* Supporting Files */,
-			);
-			path = TVTableViewControoler;
-			sourceTree = "<group>";
-		};
-		0AF3ADD01F645A5E0046DE4A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				0AF3ADD11F645A5E0046DE4A /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		0AF3ADE61F645A5E0046DE4A /* TVTableViewControolerTests */ = {
-			isa = PBXGroup;
-			children = (
-				0AF3ADE71F645A5E0046DE4A /* TVTableViewControolerTests.m */,
-				0AF3ADE91F645A5E0046DE4A /* Info.plist */,
-			);
-			path = TVTableViewControolerTests;
-			sourceTree = "<group>";
-		};
-		0AF3ADF11F645A5E0046DE4A /* TVTableViewControolerUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0AF3ADF21F645A5E0046DE4A /* TVTableViewControolerUITests.m */,
-				0AF3ADF41F645A5E0046DE4A /* Info.plist */,
-			);
-			path = TVTableViewControolerUITests;
-			sourceTree = "<group>";
-		};
 		0BC2685313FE4F2E97E7359F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -214,9 +154,6 @@
 				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
 				6003F593195388D20070C39A /* Example for TableBarViewController */,
 				6003F5B5195388D20070C39A /* Tests */,
-				0AF3ADCF1F645A5E0046DE4A /* TVTableViewControoler */,
-				0AF3ADE61F645A5E0046DE4A /* TVTableViewControolerTests */,
-				0AF3ADF11F645A5E0046DE4A /* TVTableViewControolerUITests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
 				0BC2685313FE4F2E97E7359F /* Pods */,
@@ -459,8 +396,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AF3ADDD1F645A5E0046DE4A /* Assets.xcassets in Resources */,
-				0AF3ADDB1F645A5E0046DE4A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,9 +533,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AF3ADD81F645A5E0046DE4A /* ViewController.m in Sources */,
-				0AF3ADD51F645A5E0046DE4A /* AppDelegate.m in Sources */,
-				0AF3ADD21F645A5E0046DE4A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -608,7 +540,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AF3ADE81F645A5E0046DE4A /* TVTableViewControolerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,7 +547,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AF3ADF31F645A5E0046DE4A /* TVTableViewControolerUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -660,14 +590,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		0AF3ADD91F645A5E0046DE4A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0AF3ADDA1F645A5E0046DE4A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		6003F596195388D20070C39A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -999,6 +921,7 @@
 				0AF3ADF61F645A5E0046DE4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0AF3ADFC1F645A5E0046DE4A /* Build configuration list for PBXNativeTarget "TVTableViewControolerTests" */ = {
 			isa = XCConfigurationList;
@@ -1007,6 +930,7 @@
 				0AF3ADF81F645A5E0046DE4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0AF3ADFD1F645A5E0046DE4A /* Build configuration list for PBXNativeTarget "TVTableViewControolerUITests" */ = {
 			isa = XCConfigurationList;
@@ -1015,6 +939,7 @@
 				0AF3ADFA1F645A5E0046DE4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6003F585195388D10070C39A /* Build configuration list for PBXProject "TableBarViewController" */ = {
 			isa = XCConfigurationList;
