@@ -41,60 +41,60 @@
 
 @implementation UIViewController (MRJ_TabBarController)
 
-- (NSString *)MRJ__tabItemTitle {
+- (NSString *)mrj_tabItemTitle {
     return objc_getAssociatedObject(self, _cmd);
 }
 
-- (void)setMRJ__tabItemTitle:(NSString *)MRJ__tabItemTitle {
-    self.MRJ__tabItem.title = MRJ__tabItemTitle;
-    objc_setAssociatedObject(self, @selector(MRJ__tabItemTitle), MRJ__tabItemTitle, OBJC_ASSOCIATION_COPY_NONATOMIC);
+- (void)setMrj_tabItemTitle:(NSString *)mrj_tabItemTitle {
+    self.mrj_tabItem.title = mrj_tabItemTitle;
+    objc_setAssociatedObject(self, @selector(mrj_tabItemTitle), mrj_tabItemTitle, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
-- (UIImage *)MRJ__tabItemImage {
+- (UIImage *)mrj_tabItemImage {
     return objc_getAssociatedObject(self, _cmd);
 }
 
-- (void)setMRJ__tabItemImage:(UIImage *)MRJ__tabItemImage {
-    self.MRJ__tabItem.image = MRJ__tabItemImage;
-    objc_setAssociatedObject(self, @selector(MRJ__tabItemImage), MRJ__tabItemImage, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+- (void)setMrj_tabItemImage:(UIImage *)mrj_tabItemImage {
+    self.mrj_tabItem.image = mrj_tabItemImage;
+    objc_setAssociatedObject(self, @selector(mrj_tabItemImage), mrj_tabItemImage, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (UIImage *)MRJ__tabItemSelectedImage {
+- (UIImage *)mrj_tabItemSelectedImage {
     return objc_getAssociatedObject(self, _cmd);
 }
 
 
-- (void)setMRJ__tabItemSelectedImage:(UIImage *)MRJ__tabItemSelectedImage {
-    self.MRJ__tabItem.selectedImage = MRJ__tabItemSelectedImage;
-    objc_setAssociatedObject(self, @selector(MRJ__tabItemSelectedImage), MRJ__tabItemSelectedImage, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+- (void)setMrj_tabItemSelectedImage:(UIImage *)mrj_tabItemSelectedImage {
+    self.mrj_tabItem.selectedImage = mrj_tabItemSelectedImage;
+    objc_setAssociatedObject(self, @selector(mrj_tabItemSelectedImage), mrj_tabItemSelectedImage, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
-- (MRJ_TabItem *)MRJ__tabItem {
-    MRJ_TabBar *tabBar = self.MRJ__tabBarController.tabBar;
+- (MRJ_TabItem *)mrj_tabItem {
+    MRJ_TabBar *tabBar = self.mrj_tabBarController.tabBar;
     if (!tabBar) {
         return nil;
     }
-    if (![self.MRJ__tabBarController.viewControllers containsObject:self]) {
+    if (![self.mrj_tabBarController.viewControllers containsObject:self]) {
         return nil;
     }
     
-    NSUInteger index = [self.MRJ__tabBarController.viewControllers indexOfObject:self];
+    NSUInteger index = [self.mrj_tabBarController.viewControllers indexOfObject:self];
     return tabBar.items[index];
 }
 
-- (MRJ_TabBarController *)MRJ__tabBarController {
+- (MRJ_TabBarController *)mrj_tabBarController {
     return (MRJ_TabBarController *)self.parentViewController;
 }
 
-- (void)MRJ__tabItemDidSelected:(BOOL)isFirstTime {}
+- (void)mrj_tabItemDidSelected:(BOOL)isFirstTime {}
 
 - (void)tabItemDidSelected {}
 
-- (void)MRJ__tabItemDidDeselected {}
+- (void)mrj_tabItemDidDeselected {}
 
 - (void)tabItemDidDeselected {}
 
-- (BOOL)MRJ__isTabItemSelectedFirstTime {
+- (BOOL)mrj_isTabItemSelectedFirstTime {
     id selected = objc_getAssociatedObject(self, _cmd);
     if (!selected) {
         return YES;
@@ -221,9 +221,9 @@
         [self addChildViewController:controller];
         
         MRJ_TabItem *item = [MRJ_TabItem buttonWithType:UIButtonTypeCustom];
-        item.image = controller.MRJ__tabItemImage;
-        item.selectedImage = controller.MRJ__tabItemSelectedImage;
-        item.title = controller.MRJ__tabItemTitle;
+        item.image = controller.mrj_tabItemImage;
+        item.selectedImage = controller.mrj_tabItemSelectedImage;
+        item.title = controller.mrj_tabItemTitle;
         [items addObject:item];
     }
     self.tabBar.items = items;
@@ -317,7 +317,7 @@
     UIViewController *oldController = nil;
     if (self.selectedControllerIndex != NSNotFound) {
         oldController = self.viewControllers[self.selectedControllerIndex];
-        [oldController MRJ__tabItemDidDeselected];
+        [oldController mrj_tabItemDidDeselected];
         if ([oldController respondsToSelector:@selector(tabItemDidDeselected)]) {
             [oldController performSelector:@selector(tabItemDidDeselected)];
         }
@@ -347,12 +347,12 @@
         }
     }
     
-    BOOL isSelectedFirstTime = [curController MRJ__isTabItemSelectedFirstTime];
+    BOOL isSelectedFirstTime = [curController mrj_isTabItemSelectedFirstTime];
     if (isSelectedFirstTime) {
-        objc_setAssociatedObject(curController, @selector(MRJ__isTabItemSelectedFirstTime), @(NO), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+        objc_setAssociatedObject(curController, @selector(mrj_isTabItemSelectedFirstTime), @(NO), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     }
     
-    [curController MRJ__tabItemDidSelected:isSelectedFirstTime];
+    [curController mrj_tabItemDidSelected:isSelectedFirstTime];
     if ([curController respondsToSelector:@selector(tabItemDidSelected)]) {
         [curController performSelector:@selector(tabItemDidSelected)];
     }
