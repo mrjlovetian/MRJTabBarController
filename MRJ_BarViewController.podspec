@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'MRJ_BarViewController'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = '一个可以支持AppleTV的导航栏，这是个好的开始.'
 
 # This description is used to generate tags and improve search results.
