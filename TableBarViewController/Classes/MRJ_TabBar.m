@@ -312,8 +312,8 @@
     // 如果tabbar支持滚动，将选中的item放到tabbar的中央
     [self setSelectedItemCenter];
     
-    if (self.delegate && [self.delegate respondsToSelector:@selector(MRJ__tabBar:didSelectedItemAtIndex:)]) {
-        [self.delegate MRJ__tabBar:self didSelectedItemAtIndex:selectedItemIndex];
+    if (self.delegate && [self.delegate respondsToSelector:@selector(tabBar:didSelectedItemAtIndex:)]) {
+        [self.delegate tabBar:self didSelectedItemAtIndex:selectedItemIndex];
     }
 }
 

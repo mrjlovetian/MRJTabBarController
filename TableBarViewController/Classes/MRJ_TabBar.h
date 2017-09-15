@@ -28,7 +28,7 @@
 /**
  *  已经切换到指定index
  */
-- (void)MRJ__tabBar:(MRJ_TabBar *)tabBar didSelectedItemAtIndex:(NSUInteger)index;
+- (void)tabBar:(MRJ_TabBar *)tabBar didSelectedItemAtIndex:(NSUInteger)index;
 
 @end
 
