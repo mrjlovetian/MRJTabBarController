@@ -8,8 +8,6 @@
 
 #import "MRJ_TabBar.h"
 
-#define BADGE_BG_COLOR_DEFAULT [UIColor colorWithRed:252 / 255.0f green:15 / 255.0f blue:29 / 255.0f alpha:1.0f]
-
 @interface MRJ_TabBar ()
 
 // 当TabBar支持滚动时，使用此scrollView
@@ -90,7 +88,7 @@
     
     _badgeTitleColor = [UIColor whiteColor];
     _badgeTitleFont = [UIFont systemFontOfSize:13];
-    _badgeBackgroundColor = BADGE_BG_COLOR_DEFAULT;
+    _badgeBackgroundColor = [UIColor colorWithRed:252 / 255.0f green:15 / 255.0f blue:29 / 255.0f alpha:1.0f];
     
     _numberBadgeMarginTop = 2;
     _numberBadgeCenterMarginRight = 30;

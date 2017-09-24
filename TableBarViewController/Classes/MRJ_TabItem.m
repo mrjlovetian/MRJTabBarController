@@ -41,7 +41,6 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    
     [self setup];
 }
 
@@ -257,7 +256,6 @@
     self.dotBadgeSideLength = sideLength;
     [self updateBadge];
 }
-
 
 - (void)setBadgeBackgroundColor:(UIColor *)badgeBackgroundColor {
     _badgeBackgroundColor = badgeBackgroundColor;

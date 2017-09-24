@@ -63,7 +63,6 @@
     return objc_getAssociatedObject(self, _cmd);
 }
 
-
 - (void)setMrj_tabItemSelectedImage:(UIImage *)mrj_tabItemSelectedImage {
     self.mrj_tabItem.selectedImage = mrj_tabItemSelectedImage;
     objc_setAssociatedObject(self, @selector(mrj_tabItemSelectedImage), mrj_tabItemSelectedImage, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
@@ -103,7 +102,6 @@
 }
 
 @end
-
 
 #pragma mark - MRJ_TabBarController
 
@@ -154,7 +152,6 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     [self setupFrameOfTabBarAndContentView];
-    
     [self.view addSubview:self.tabBar];
 }
 
