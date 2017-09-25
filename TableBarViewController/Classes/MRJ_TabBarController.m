@@ -307,7 +307,7 @@
 
 #pragma mark - MRJ_TabBarDelegate
 
-- (void)MRJ__tabBar:(MRJ_TabBar *)tabBar didSelectedItemAtIndex:(NSUInteger)index {
+- (void)tabBar:(MRJ_TabBar *)tabBar didSelectedItemAtIndex:(NSUInteger)index {
     if (index == self.selectedControllerIndex) {
         return;
     }
