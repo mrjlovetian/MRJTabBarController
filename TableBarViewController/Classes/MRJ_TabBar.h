@@ -39,23 +39,44 @@
  */
 @property (nonatomic, copy) NSArray <MRJ_TabItem *> *items;
 
-@property (nonatomic, strong) UIColor *itemSelectedBgColor;         // item选中背景颜色
-@property (nonatomic, strong) UIImage *itemSelectedBgImage;         // item选中背景图像
-@property (nonatomic, assign) CGFloat itemSelectedBgCornerRadius;   // item选中背景圆角
+/// item选中背景颜色
+@property (nonatomic, strong) UIColor *itemSelectedBgColor;
 
-@property (nonatomic, strong) UIColor *itemTitleColor;              // 标题颜色
-@property (nonatomic, strong) UIColor *itemTitleSelectedColor;      // 选中时标题的颜色
-@property (nonatomic, strong) UIFont  *itemTitleFont;               // 标题字体
-@property (nonatomic, strong) UIFont  *itemTitleSelectedFont;       // 选中时标题的字体
+/// item选中背景图像
+@property (nonatomic, strong) UIImage *itemSelectedBgImage;
 
-@property (nonatomic, strong) UIColor *badgeBackgroundColor;        // Badge背景颜色
-@property (nonatomic, strong) UIImage *badgeBackgroundImage;        // Badge背景图像
-@property (nonatomic, strong) UIColor *badgeTitleColor;             // Badge标题颜色
-@property (nonatomic, strong) UIFont  *badgeTitleFont;              // Badge标题字体
+/// item选中背景圆角
+@property (nonatomic, assign) CGFloat itemSelectedBgCornerRadius;
 
-@property (nonatomic, assign) CGFloat leftAndRightSpacing;          // TabBar边缘与第一个和最后一个item的距离
+/// 标题颜色
+@property (nonatomic, strong) UIColor *itemTitleColor;
 
-@property (nonatomic, assign) NSUInteger selectedItemIndex;          // 选中某一个item
+/// 选中时标题的颜色
+@property (nonatomic, strong) UIColor *itemTitleSelectedColor;
+
+/// 标题字体
+@property (nonatomic, strong) UIFont  *itemTitleFont;
+
+/// 选中时标题的字体
+@property (nonatomic, strong) UIFont  *itemTitleSelectedFont;
+
+/// Badge背景颜色
+@property (nonatomic, strong) UIColor *badgeBackgroundColor;
+
+/// Badge背景图像
+@property (nonatomic, strong) UIImage *badgeBackgroundImage;
+
+/// Badge标题颜色
+@property (nonatomic, strong) UIColor *badgeTitleColor;
+
+/// Badge标题字体
+@property (nonatomic, strong) UIFont  *badgeTitleFont;
+
+/// TabBar边缘与第一个和最后一个item的距离
+@property (nonatomic, assign) CGFloat leftAndRightSpacing;
+
+/// 选中某一个item
+@property (nonatomic, assign) NSUInteger selectedItemIndex;
 
 
 /**

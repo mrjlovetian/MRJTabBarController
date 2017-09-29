@@ -29,12 +29,10 @@ typedef NS_ENUM(NSInteger, MRJ_TabItemBadgeStyle) {
  */
 @property (nonatomic, assign, readonly) CGRect frameWithOutTransform;
 @property (nonatomic, assign) CGSize size;
-
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, strong) UIColor *titleColor;
 @property (nonatomic, strong) UIColor *titleSelectedColor;
 @property (nonatomic, strong) UIFont *titleFont;
-
 @property (nonatomic, strong) UIImage *image;
 @property (nonatomic, strong) UIImage *selectedImage;
 

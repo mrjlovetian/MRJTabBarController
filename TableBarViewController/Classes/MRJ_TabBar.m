@@ -12,7 +12,6 @@
 
 // 当TabBar支持滚动时，使用此scrollView
 @property (nonatomic, strong) UIScrollView *scrollView;
-
 @property (nonatomic, strong) MRJ_TabItem *specialItem;
 @property (nonatomic, copy) void (^specialItemHandler)(MRJ_TabItem *item);
 

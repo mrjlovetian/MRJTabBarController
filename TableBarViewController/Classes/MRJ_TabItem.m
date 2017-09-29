@@ -15,16 +15,13 @@
 @property (nonatomic, assign) CGFloat verticalOffset;
 @property (nonatomic, assign) CGFloat spacing;
 @property (nonatomic, strong) CALayer *separatorLayer;
-
 @property (nonatomic, assign) CGFloat numberBadgeMarginTop;
 @property (nonatomic, assign) CGFloat numberBadgeCenterMarginRight;
 @property (nonatomic, assign) CGFloat numberBadgeTitleHorizonalSpace;
 @property (nonatomic, assign) CGFloat numberBadgeTitleVerticalSpace;
-
 @property (nonatomic, assign) CGFloat dotBadgeMarginTop;
 @property (nonatomic, assign) CGFloat dotBadgeCenterMarginRight;
 @property (nonatomic, assign) CGFloat dotBadgeSideLength;
-
 @property (nonatomic, copy) void (^doubleTapHandler)(void);
 
 @end
