@@ -10,47 +10,47 @@
 
 @interface MRJ_TabBar ()
 
-// 当TabBar支持滚动时，使用此scrollView
+/// 当TabBar支持滚动时，使用此scrollView
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) MRJ_TabItem *specialItem;
 @property (nonatomic, copy) void (^specialItemHandler)(MRJ_TabItem *item);
 
-// 选中背景
+/// 选中背景
 @property (nonatomic, strong) UIImageView *itemSelectedBgImageView;
 
-// 选中背景相对于MRJ_TabItem的insets
+/// 选中背景相对于MRJ_TabItem的insets
 @property (nonatomic, assign) UIEdgeInsets itemSelectedBgInsets;
 
-// TabItem选中切换时，是否显示动画
+/// TabItem选中切换时，是否显示动画
 @property (nonatomic, assign) BOOL itemSelectedBgSwitchAnimated;
 
-// Item是否匹配title的文字宽度
+/// Item是否匹配title的文字宽度
 @property (nonatomic, assign) BOOL itemFitTextWidth;
 
-// 当Item匹配title的文字宽度时，左右留出的空隙，item的宽度 = 文字宽度 + spacing
+/// 当Item匹配title的文字宽度时，左右留出的空隙，item的宽度 = 文字宽度 + spacing
 @property (nonatomic, assign) CGFloat itemFitTextWidthSpacing;
 
-// item的宽度
+/// item的宽度
 @property (nonatomic, assign) CGFloat itemWidth;
 
-// item的内容水平居中时，image与顶部的距离
+/// item的内容水平居中时，image与顶部的距离
 @property (nonatomic, assign) CGFloat itemContentHorizontalCenterVerticalOffset;
 
-// item的内容水平居中时，title与image的距离
+/// item的内容水平居中时，title与image的距离
 @property (nonatomic, assign) CGFloat itemContentHorizontalCenterSpacing;
 
-// 数字样式的badge相关属性
+/// 数字样式的badge相关属性
 @property (nonatomic, assign) CGFloat numberBadgeMarginTop;
 @property (nonatomic, assign) CGFloat numberBadgeCenterMarginRight;
 @property (nonatomic, assign) CGFloat numberBadgeTitleHorizonalSpace;
 @property (nonatomic, assign) CGFloat numberBadgeTitleVerticalSpace;
 
-// 小圆点样式的badge相关属性
+/// 小圆点样式的badge相关属性
 @property (nonatomic, assign) CGFloat dotBadgeMarginTop;
 @property (nonatomic, assign) CGFloat dotBadgeCenterMarginRight;
 @property (nonatomic, assign) CGFloat dotBadgeSideLength;
 
-// 分割线相关属性
+/// 分割线相关属性
 @property (nonatomic, strong) NSMutableArray *separatorLayers;
 @property (nonatomic, strong) UIColor *itemSeparatorColor;
 @property (nonatomic, assign) CGFloat itemSeparatorWidth;
@@ -102,13 +102,13 @@
 - (void)setFrame:(CGRect)frame {
     [super setFrame:frame];
     
-    // 更新items的frame
+    /// 更新items的frame
     [self updateItemsFrame];
     
-    // 更新选中背景的frame
+    /// 更新选中背景的frame
     [self updateSelectedBgFrameWithIndex:self.selectedItemIndex];
     
-    // 更新分割线
+    /// 更新分割线
     [self updateSeperators];
     
     if (self.scrollView) {
@@ -120,11 +120,11 @@
     _selectedItemIndex = NSNotFound;
     [self updateSelectedBgFrameWithIndex:self.selectedItemIndex];
     
-    // 将老的item从superview上删除
+    /// 将老的item从superview上删除
     [_items makeObjectsPerformSelector:@selector(removeFromSuperview)];
     _items = [items copy];
     
-    // 初始化每一个item
+    /// 初始化每一个item
     for (MRJ_TabItem *item in self.items) {
         item.titleColor = self.itemTitleColor;
         item.titleSelectedColor = self.itemTitleSelectedColor;
@@ -151,10 +151,10 @@
         [item addTarget:self action:@selector(tabItemClicked:) forControlEvents:UIControlEventPrimaryActionTriggered];
 #endif
     }
-    // 更新每个item的位置
+    /// 更新每个item的位置
     [self updateItemsFrame];
     
-    // 更新item的大小缩放
+    /// 更新item的大小缩放
     [self updateItemsScaleIfNeeded];
 }
 
@@ -177,7 +177,7 @@
     if (self.items.count == 0) {
         return;
     }
-    // 将item从superview上删除
+    /// 将item从superview上删除
     [self.items makeObjectsPerformSelector:@selector(removeFromSuperview)];
     // 将item的选中背景从superview上删除
     [self.itemSelectedBgImageView removeFromSuperview];

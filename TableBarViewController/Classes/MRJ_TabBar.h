@@ -15,28 +15,20 @@
 
 @optional
 
-/**
- *  是否能切换到指定index
- */
+/// 是否能切换到指定index
 - (BOOL)tabBar:(MRJ_TabBar *)tabBar shouldSelectItemAtIndex:(NSUInteger)index;
 
-/**
- *  将要切换到指定index
- */
+/// 将要切换到指定index
 - (void)tabBar:(MRJ_TabBar *)tabBar willSelectItemAtIndex:(NSUInteger)index;
 
-/**
- *  已经切换到指定index
- */
+/// 已经切换到指定index
 - (void)tabBar:(MRJ_TabBar *)tabBar didSelectedItemAtIndex:(NSUInteger)index;
 
 @end
 
 @interface MRJ_TabBar : UIView
 
-/**
- *  TabItems，提供给MRJ_TabBarController使用，一般不手动设置此属性
- */
+/// TabItems，提供给MRJ_TabBarController使用，一般不手动设置此属性
 @property (nonatomic, copy) NSArray <MRJ_TabItem *> *items;
 
 /// item选中背景颜色
@@ -79,24 +71,16 @@
 @property (nonatomic, assign) NSUInteger selectedItemIndex;
 
 
-/**
- *  拖动内容视图时，item的颜色是否根据拖动位置显示渐变效果，默认为YES
- */
+/// 拖动内容视图时，item的颜色是否根据拖动位置显示渐变效果，默认为YES
 @property (nonatomic, assign, getter = isItemColorChangeFollowContentScroll) BOOL itemColorChangeFollowContentScroll;
 
-/**
- *  拖动内容视图时，item的字体是否根据拖动位置显示渐变效果，默认为NO
- */
+/// 拖动内容视图时，item的字体是否根据拖动位置显示渐变效果，默认为NO
 @property (nonatomic, assign, getter = isItemFontChangeFollowContentScroll) BOOL itemFontChangeFollowContentScroll;
 
-/**
- *  TabItem的选中背景是否随contentView滑动而移动
- */
+/// TabItem的选中背景是否随contentView滑动而移动
 @property (nonatomic, assign, getter = isItemSelectedBgScrollFollowContent) BOOL itemSelectedBgScrollFollowContent;
 
-/**
- *  将Image和Title设置为水平居中，默认为YES
- */
+/// 将Image和Title设置为水平居中，默认为YES
 @property (nonatomic, assign, getter = isItemContentHorizontalCenter) BOOL itemContentHorizontalCenter;
 
 @property (nonatomic, weak) id<MRJ_TabBarDelegate> delegate;

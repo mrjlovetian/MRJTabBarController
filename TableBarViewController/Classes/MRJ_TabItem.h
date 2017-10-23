@@ -8,9 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-/**
- *  Badge样式
- */
+/// Badge样式
 typedef NS_ENUM(NSInteger, MRJ_TabItemBadgeStyle) {
     MRJ_TabItemBadgeStyleNumber = 0, // 数字样式
     MRJ_TabItemBadgeStyleDot = 1, // 小圆点

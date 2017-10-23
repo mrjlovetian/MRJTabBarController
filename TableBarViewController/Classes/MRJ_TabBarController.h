@@ -87,9 +87,7 @@
  */
 - (void)mrj_tabItemDidSelected:(BOOL)isFirstTime;
 
-/**
- *  ViewController对应的Tab被Deselect后，执行此方法，此方法为回调方法
- */
+/// ViewController对应的Tab被Deselect后，执行此方法，此方法为回调方法
 - (void)mrj_tabItemDidDeselected;
 
 

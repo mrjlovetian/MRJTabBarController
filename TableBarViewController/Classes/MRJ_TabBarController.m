@@ -13,9 +13,7 @@
 
 #pragma mark - MRJ_TabContentScrollView
 
-/**
- *  自定义UIScrollView，在需要时可以拦截其滑动手势
- */
+/// 自定义UIScrollView，在需要时可以拦截其滑动手势
 
 @class MRJ_TabContentScrollView;
 
@@ -479,7 +477,7 @@
         return NO;
     }
     
-    // 最后一页往左滑动
+    /// 最后一页往左滑动
     if (self.interceptLeftSlideGuetureInLastPage) {
         NSUInteger numberOfPage = self.contentSize.width / self.frame.size.width;
         if (targetIndex >= numberOfPage) {
@@ -487,7 +485,7 @@
         }
     }
     
-    // 其他情况
+    /// 其他情况
     if (self.MRJ__delegate && [self.MRJ__delegate respondsToSelector:@selector(scrollView:shouldScrollToPageIndex:)]) {
         return [self.MRJ__delegate scrollView:self shouldScrollToPageIndex:targetIndex];
     }
