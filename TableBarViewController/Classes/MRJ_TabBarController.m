@@ -28,7 +28,6 @@
 @interface MRJ_TabContentScrollView : UIScrollView
 
 @property (nonatomic, weak) id<MRJ_TabContentScrollViewDelegate> MRJ__delegate;
-
 @property (nonatomic, assign) BOOL interceptLeftSlideGuetureInLastPage;
 @property (nonatomic, assign) BOOL interceptRightSlideGuetureInFirstPage;
 
@@ -137,7 +136,6 @@
     _selectedControllerIndex = NSNotFound;
     _tabBar = [[MRJ_TabBar alloc] init];
     _tabBar.delegate = self;
-    
     _loadViewOfChildContollerWhileAppear = NO;
     _defaultSelectedControllerIndex = 0;
 }
@@ -148,14 +146,12 @@
     self.automaticallyAdjustsScrollViewInsets = NO;
     self.view.clipsToBounds = YES;
     self.view.backgroundColor = [UIColor whiteColor];
-    
     [self setupFrameOfTabBarAndContentView];
     [self.view addSubview:self.tabBar];
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
     // 在第一次调用viewWillAppear方法时，初始化选中的item
     if (!_didViewAppeared) {
         self.tabBar.selectedItemIndex = self.defaultSelectedControllerIndex;
@@ -210,7 +206,6 @@
     }
     
     _viewControllers = [viewControllers copy];
-    
     NSMutableArray *items = [NSMutableArray array];
     for (UIViewController *controller in _viewControllers) {
         [self addChildViewController:controller];
@@ -244,7 +239,6 @@
 #elif TARGET_OS_TV
         
 #endif
-        
         self.contentScrollView.showsHorizontalScrollIndicator = NO;
         self.contentScrollView.showsVerticalScrollIndicator = NO;
         self.contentScrollView.delegate = self;
@@ -444,7 +438,6 @@
             [self.contentScrollView addSubview:controller.view];
         }
     }
-    
     // 同步修改tarBar的子视图状态
     [self.tabBar updateSubViewsWhenParentScrollViewScroll:self.contentScrollView];
 }
