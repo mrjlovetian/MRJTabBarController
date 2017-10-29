@@ -16,9 +16,7 @@ typedef NS_ENUM(NSInteger, MRJ_TabItemBadgeStyle) {
 
 @interface MRJ_TabItem : UIButton
 
-/**
- *  item在tabBar中的index，此属性不能手动设置
- */
+/// item在tabBar中的index，此属性不能手动设置
 @property (nonatomic, assign) NSUInteger index;
 
 /**
@@ -42,9 +40,7 @@ typedef NS_ENUM(NSInteger, MRJ_TabItemBadgeStyle) {
  */
 @property (nonatomic, assign) NSInteger badge;
 
-/**
- *  badge的样式，支持数字样式和小圆点
- */
+/// badge的样式，支持数字样式和小圆点
 @property (nonatomic, assign) MRJ_TabItemBadgeStyle badgeStyle;
 
 /**

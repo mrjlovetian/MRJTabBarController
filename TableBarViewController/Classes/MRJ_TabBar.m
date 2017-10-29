@@ -411,7 +411,6 @@
     [self.specialItem addTarget:self action:@selector(specialItemClicked:) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:item];
     [self updateItemsFrame];
-    
     self.specialItemHandler = handler;
 }
 
@@ -434,7 +433,7 @@
 }
 
 - (void)setItemSelectedBgInsets:(UIEdgeInsets)insets
-              tapSwitchAnimated:(BOOL)animated{
+              tapSwitchAnimated:(BOOL)animated {
     self.itemSelectedBgInsets = insets;
     self.itemSelectedBgSwitchAnimated = animated;
 }
