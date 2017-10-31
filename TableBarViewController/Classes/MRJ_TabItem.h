@@ -42,34 +42,22 @@ typedef NS_ENUM(NSInteger, MRJ_TabItemBadgeStyle) {
  */
 @property (nonatomic, assign) NSInteger badge;
 
-/**
- *  badge的样式，支持数字样式和小圆点
- */
+/// badge的样式，支持数字样式和小圆点
 @property (nonatomic, assign) MRJ_TabItemBadgeStyle badgeStyle;
 
-/**
- *  badge的背景颜色
- */
+/// badge的背景颜色
 @property (nonatomic, strong) UIColor *badgeBackgroundColor;
 
-/**
- *  badge的背景图片
- */
+/// badge的背景图片
 @property (nonatomic, strong) UIImage *badgeBackgroundImage;
 
-/**
- *  badge的标题颜色
- */
+/// badge的标题颜色
 @property (nonatomic, strong) UIColor *badgeTitleColor;
 
-/**
- *  badge的标题字体，默认13号
- */
+/// badge的标题字体，默认13号
 @property (nonatomic, strong) UIFont *badgeTitleFont;
 
-/**
- *  设置Image和Title水平居中
- */
+/// 设置Image和Title水平居中
 @property (nonatomic, assign, getter = isContentHorizontalCenter) BOOL contentHorizontalCenter;
 
 /**

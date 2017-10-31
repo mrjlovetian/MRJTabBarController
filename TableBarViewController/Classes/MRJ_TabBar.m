@@ -17,28 +17,20 @@
 
 /// 选中背景
 @property (nonatomic, strong) UIImageView *itemSelectedBgImageView;
-
 /// 选中背景相对于MRJ_TabItem的insets
 @property (nonatomic, assign) UIEdgeInsets itemSelectedBgInsets;
-
 /// TabItem选中切换时，是否显示动画
 @property (nonatomic, assign) BOOL itemSelectedBgSwitchAnimated;
-
 /// Item是否匹配title的文字宽度
 @property (nonatomic, assign) BOOL itemFitTextWidth;
-
 /// 当Item匹配title的文字宽度时，左右留出的空隙，item的宽度 = 文字宽度 + spacing
 @property (nonatomic, assign) CGFloat itemFitTextWidthSpacing;
-
 /// item的宽度
 @property (nonatomic, assign) CGFloat itemWidth;
-
 /// item的内容水平居中时，image与顶部的距离
 @property (nonatomic, assign) CGFloat itemContentHorizontalCenterVerticalOffset;
-
 /// item的内容水平居中时，title与image的距离
 @property (nonatomic, assign) CGFloat itemContentHorizontalCenterSpacing;
-
 /// 数字样式的badge相关属性
 @property (nonatomic, assign) CGFloat numberBadgeMarginTop;
 @property (nonatomic, assign) CGFloat numberBadgeCenterMarginRight;

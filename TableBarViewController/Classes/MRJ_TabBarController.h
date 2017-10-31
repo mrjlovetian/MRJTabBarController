@@ -16,19 +16,12 @@
 
 @property (nonatomic, copy) NSArray <UIViewController *> *viewControllers;
 
-/**
- *  内容视图的Frame
- */
+/// 内容视图的Frame
 @property (nonatomic, assign) CGRect contentViewFrame;
-
-/**
- *  第一次显示时，默认被选中的ViewController的Index，在viewWillAppear方法被调用前设置有效
- */
+/// 第一次显示时，默认被选中的ViewController的Index，在viewWillAppear方法被调用前设置有效
 @property (nonatomic, assign) NSUInteger defaultSelectedControllerIndex;
 
-/**
- *  设置被选中的ViewController的Index，界面会自动切换
- */
+/// 设置被选中的ViewController的Index，界面会自动切换
 @property (nonatomic, assign) NSUInteger selectedControllerIndex;
 
 /**

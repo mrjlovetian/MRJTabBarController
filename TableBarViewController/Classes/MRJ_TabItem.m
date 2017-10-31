@@ -52,7 +52,6 @@
     self.badgeButton.userInteractionEnabled = NO;
     self.badgeButton.clipsToBounds = YES;
     [self addSubview:self.badgeButton];
-    
     self.adjustsImageWhenHighlighted = NO;
     _badgeStyle = MRJ_TabItemBadgeStyleNumber;
     self.badge = 0;

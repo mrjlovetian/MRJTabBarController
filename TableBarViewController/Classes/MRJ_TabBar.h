@@ -30,59 +30,40 @@
 
 /// TabItems，提供给MRJ_TabBarController使用，一般不手动设置此属性
 @property (nonatomic, copy) NSArray <MRJ_TabItem *> *items;
-
 /// item选中背景颜色
 @property (nonatomic, strong) UIColor *itemSelectedBgColor;
-
 /// item选中背景图像
 @property (nonatomic, strong) UIImage *itemSelectedBgImage;
-
 /// item选中背景圆角
 @property (nonatomic, assign) CGFloat itemSelectedBgCornerRadius;
-
 /// 标题颜色
 @property (nonatomic, strong) UIColor *itemTitleColor;
-
 /// 选中时标题的颜色
 @property (nonatomic, strong) UIColor *itemTitleSelectedColor;
-
 /// 标题字体
 @property (nonatomic, strong) UIFont  *itemTitleFont;
-
 /// 选中时标题的字体
 @property (nonatomic, strong) UIFont  *itemTitleSelectedFont;
-
 /// Badge背景颜色
 @property (nonatomic, strong) UIColor *badgeBackgroundColor;
-
 /// Badge背景图像
 @property (nonatomic, strong) UIImage *badgeBackgroundImage;
-
 /// Badge标题颜色
 @property (nonatomic, strong) UIColor *badgeTitleColor;
-
 /// Badge标题字体
 @property (nonatomic, strong) UIFont  *badgeTitleFont;
-
 /// TabBar边缘与第一个和最后一个item的距离
 @property (nonatomic, assign) CGFloat leftAndRightSpacing;
-
 /// 选中某一个item
 @property (nonatomic, assign) NSUInteger selectedItemIndex;
-
-
 /// 拖动内容视图时，item的颜色是否根据拖动位置显示渐变效果，默认为YES
 @property (nonatomic, assign, getter = isItemColorChangeFollowContentScroll) BOOL itemColorChangeFollowContentScroll;
-
 /// 拖动内容视图时，item的字体是否根据拖动位置显示渐变效果，默认为NO
 @property (nonatomic, assign, getter = isItemFontChangeFollowContentScroll) BOOL itemFontChangeFollowContentScroll;
-
 /// TabItem的选中背景是否随contentView滑动而移动
 @property (nonatomic, assign, getter = isItemSelectedBgScrollFollowContent) BOOL itemSelectedBgScrollFollowContent;
-
 /// 将Image和Title设置为水平居中，默认为YES
 @property (nonatomic, assign, getter = isItemContentHorizontalCenter) BOOL itemContentHorizontalCenter;
-
 @property (nonatomic, weak) id<MRJ_TabBarDelegate> delegate;
 
 /**
