@@ -18,6 +18,7 @@
 
 /// 内容视图的Frame
 @property (nonatomic, assign) CGRect contentViewFrame;
+
 /// 第一次显示时，默认被选中的ViewController的Index，在viewWillAppear方法被调用前设置有效
 @property (nonatomic, assign) NSUInteger defaultSelectedControllerIndex;
 

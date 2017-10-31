@@ -16,9 +16,7 @@ typedef NS_ENUM(NSInteger, MRJ_TabItemBadgeStyle) {
 
 @interface MRJ_TabItem : UIButton
 
-/**
- *  item在tabBar中的index，此属性不能手动设置
- */
+/// item在tabBar中的index，此属性不能手动设置
 @property (nonatomic, assign) NSUInteger index;
 
 /**
