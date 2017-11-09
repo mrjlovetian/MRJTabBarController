@@ -14,7 +14,6 @@
 #pragma mark - MRJ_TabContentScrollView
 
 /// 自定义UIScrollView，在需要时可以拦截其滑动手势
-
 @class MRJ_TabContentScrollView;
 
 @protocol MRJ_TabContentScrollViewDelegate <NSObject>
