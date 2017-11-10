@@ -31,6 +31,7 @@
 @property (nonatomic, assign) CGFloat itemContentHorizontalCenterVerticalOffset;
 /// item的内容水平居中时，title与image的距离
 @property (nonatomic, assign) CGFloat itemContentHorizontalCenterSpacing;
+
 /// 数字样式的badge相关属性
 @property (nonatomic, assign) CGFloat numberBadgeMarginTop;
 @property (nonatomic, assign) CGFloat numberBadgeCenterMarginRight;
