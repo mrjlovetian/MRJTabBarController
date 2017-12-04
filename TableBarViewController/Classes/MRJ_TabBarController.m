@@ -37,6 +37,7 @@
 
 @implementation UIViewController (MRJ_TabBarController)
 
+/// 标题
 - (NSString *)mrj_tabItemTitle {
     return objc_getAssociatedObject(self, _cmd);
 }
@@ -46,6 +47,7 @@
     objc_setAssociatedObject(self, @selector(mrj_tabItemTitle), mrj_tabItemTitle, OBJC_ASSOCIATION_COPY_NONATOMIC);
 }
 
+/// 图标
 - (UIImage *)mrj_tabItemImage {
     return objc_getAssociatedObject(self, _cmd);
 }
@@ -55,6 +57,7 @@
     objc_setAssociatedObject(self, @selector(mrj_tabItemImage), mrj_tabItemImage, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
+/// 被选中后的图标
 - (UIImage *)mrj_tabItemSelectedImage {
     return objc_getAssociatedObject(self, _cmd);
 }
@@ -64,6 +67,7 @@
     objc_setAssociatedObject(self, @selector(mrj_tabItemSelectedImage), mrj_tabItemSelectedImage, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
+/// tabbar
 - (MRJ_TabItem *)mrj_tabItem {
     MRJ_TabBar *tabBar = self.mrj_tabBarController.tabBar;
     if (!tabBar) {
@@ -117,7 +121,7 @@
 - (instancetype)init {
     self = [super init];
     if (self) {
-        [self _setup];
+        [self p_setup];
     }
     return self;
 }
@@ -125,12 +129,12 @@
 - (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        [self _setup];
+        [self p_setup];
     }
     return self;
 }
 
-- (void)_setup {
+- (void)p_setup {
     _selectedControllerIndex = NSNotFound;
     _tabBar = [[MRJ_TabBar alloc] init];
     _tabBar.delegate = self;
