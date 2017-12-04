@@ -67,14 +67,10 @@
 @property (nonatomic, assign, getter = isItemContentHorizontalCenter) BOOL itemContentHorizontalCenter;
 @property (nonatomic, weak) id<MRJ_TabBarDelegate> delegate;
 
-/**
- *  返回已选中的item
- */
+/// 返回已选中的item
 - (MRJ_TabItem *)selectedItem;
 
-/**
- *  根据titles创建item
- */
+/// 根据titles创建item
 - (void)setTitles:(NSArray <NSString *> *)titles;
 
 /**

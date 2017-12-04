@@ -66,9 +66,7 @@ typedef NS_ENUM(NSInteger, MRJ_TabItemBadgeStyle) {
  */
 - (void)setContentHorizontalCenterWithVerticalOffset:(CGFloat)verticalOffset
                                              spacing:(CGFloat)spacing;
-/**
- *  添加双击事件回调
- */
+/// 添加双击事件回调
 - (void)setDoubleTapHandler:(void (^)(void))handler;
 
 /**

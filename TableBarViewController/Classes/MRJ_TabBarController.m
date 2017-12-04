@@ -19,14 +19,14 @@
 @protocol MRJ_TabContentScrollViewDelegate <NSObject>
 
 @optional
-
+/// 协议方法
 - (BOOL)scrollView:(MRJ_TabContentScrollView *)scrollView shouldScrollToPageIndex:(NSUInteger)index;
 
 @end
 
 @interface MRJ_TabContentScrollView : UIScrollView
 
-@property (nonatomic, weak) id<MRJ_TabContentScrollViewDelegate> MRJ__delegate;
+@property (nonatomic, weak) id<MRJ_TabContentScrollViewDelegate> MRJ_delegate;
 @property (nonatomic, assign) BOOL interceptLeftSlideGuetureInLastPage;
 @property (nonatomic, assign) BOOL interceptRightSlideGuetureInFirstPage;
 
@@ -107,7 +107,6 @@
 }
 
 @property (nonatomic, strong) MRJ_TabContentScrollView *contentScrollView;
-
 @property (nonatomic, assign) BOOL contentScrollEnabled;
 @property (nonatomic, assign) BOOL contentSwitchAnimated;
 
@@ -241,7 +240,7 @@
         self.contentScrollView.showsHorizontalScrollIndicator = NO;
         self.contentScrollView.showsVerticalScrollIndicator = NO;
         self.contentScrollView.delegate = self;
-        self.contentScrollView.MRJ__delegate = self;
+        self.contentScrollView.MRJ_delegate = self;
         [self.view insertSubview:self.contentScrollView belowSubview:self.tabBar];
         self.contentScrollView.contentSize = CGSizeMake(self.contentViewFrame.size.width * self.viewControllers.count, self.contentViewFrame.size.height);
     }
@@ -478,8 +477,8 @@
     }
     
     /// 其他情况
-    if (self.MRJ__delegate && [self.MRJ__delegate respondsToSelector:@selector(scrollView:shouldScrollToPageIndex:)]) {
-        return [self.MRJ__delegate scrollView:self shouldScrollToPageIndex:targetIndex];
+    if (self.MRJ_delegate && [self.MRJ_delegate respondsToSelector:@selector(scrollView:shouldScrollToPageIndex:)]) {
+        return [self.MRJ_delegate scrollView:self shouldScrollToPageIndex:targetIndex];
     }
     
     return YES;

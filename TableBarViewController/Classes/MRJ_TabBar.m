@@ -370,10 +370,7 @@
     [self.scrollView setContentOffset:CGPointMake(offsetX, 0) animated:YES];
 }
 
-
-/**
- *  获取未选中字体与选中字体大小的比例
- */
+/// 获取未选中字体与选中字体大小的比例
 - (CGFloat)itemTitleUnselectedFontScale {
     if (_itemTitleSelectedFont) {
         return self.itemTitleFont.pointSize / _itemTitleSelectedFont.pointSize;
@@ -437,7 +434,6 @@
         [self updateSelectedBgFrameWithIndex:self.selectedItemIndex];
     }
 }
-
 
 #pragma mark - ItemTitle
 
