@@ -14,7 +14,6 @@
 @property (nonatomic, strong) UIScrollView *scrollView;
 @property (nonatomic, strong) MRJ_TabItem *specialItem;
 @property (nonatomic, copy) void (^specialItemHandler)(MRJ_TabItem *item);
-
 /// 选中背景
 @property (nonatomic, strong) UIImageView *itemSelectedBgImageView;
 /// 选中背景相对于MRJ_TabItem的insets
@@ -31,18 +30,15 @@
 @property (nonatomic, assign) CGFloat itemContentHorizontalCenterVerticalOffset;
 /// item的内容水平居中时，title与image的距离
 @property (nonatomic, assign) CGFloat itemContentHorizontalCenterSpacing;
-
 /// 数字样式的badge相关属性
 @property (nonatomic, assign) CGFloat numberBadgeMarginTop;
 @property (nonatomic, assign) CGFloat numberBadgeCenterMarginRight;
 @property (nonatomic, assign) CGFloat numberBadgeTitleHorizonalSpace;
 @property (nonatomic, assign) CGFloat numberBadgeTitleVerticalSpace;
-
 /// 小圆点样式的badge相关属性
 @property (nonatomic, assign) CGFloat dotBadgeMarginTop;
 @property (nonatomic, assign) CGFloat dotBadgeCenterMarginRight;
 @property (nonatomic, assign) CGFloat dotBadgeSideLength;
-
 /// 分割线相关属性
 @property (nonatomic, strong) NSMutableArray *separatorLayers;
 @property (nonatomic, strong) UIColor *itemSeparatorColor;
@@ -175,8 +171,8 @@
     // 将item的选中背景从superview上删除
     [self.itemSelectedBgImageView removeFromSuperview];
     if (self.scrollView) {
-        // 支持滚动
         
+        /// 支持滚动
         [self.scrollView addSubview:self.itemSelectedBgImageView];
         CGFloat x = self.leftAndRightSpacing;
         for (NSUInteger index = 0; index < self.items.count; index++) {
@@ -203,8 +199,8 @@
         self.scrollView.contentSize = CGSizeMake(MAX(x + self.leftAndRightSpacing, self.scrollView.frame.size.width),
                                                  self.scrollView.frame.size.height);
     } else {
-        // 不支持滚动
         
+        /// 不支持滚动
         [self addSubview:self.itemSelectedBgImageView];
         CGFloat x = self.leftAndRightSpacing;
         CGFloat allItemsWidth = self.frame.size.width - self.leftAndRightSpacing * 2;
@@ -214,7 +210,7 @@
             self.itemWidth = allItemsWidth / self.items.count;
         }
         
-        // 四舍五入，取整，防止字体模糊
+        /// 四舍五入，取整，防止字体模糊
         self.itemWidth = floorf(self.itemWidth + 0.5f);
 
         for (NSUInteger index = 0; index < self.items.count; index++) {
