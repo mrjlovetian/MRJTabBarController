@@ -144,7 +144,7 @@
 #pragma mark - Title and Image
 
 - (void)setTitle:(NSString *)title {
-    _title = title;
+    _title = [title copy];
     [self setTitle:title forState:UIControlStateNormal];
 }
 
@@ -213,9 +213,7 @@
             
             // 设置badgeButton的frame
             self.badgeButton.frame = CGRectMake(self.bounds.size.width - width / 2 - self.numberBadgeCenterMarginRight,
-                                                self.numberBadgeMarginTop,
-                                                width,
-                                                height);
+                                                self.numberBadgeMarginTop, width, height);
             self.badgeButton.layer.cornerRadius = self.badgeButton.bounds.size.height / 2;
             [self.badgeButton setTitle:badgeStr forState:UIControlStateNormal];
             self.badgeButton.hidden = NO;

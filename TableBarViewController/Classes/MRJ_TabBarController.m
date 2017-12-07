@@ -449,9 +449,7 @@
 
 @implementation MRJ_TabContentScrollView
 
-/**
- *  重写此方法，在需要的时候，拦截UIPanGestureRecognizer
- */
+/// 重写此方法，在需要的时候，拦截UIPanGestureRecognizer
 - (BOOL)gestureRecognizerShouldBegin:(UIPanGestureRecognizer *)gestureRecognizer {
     if (![gestureRecognizer respondsToSelector:@selector(translationInView:)]) {
         return YES;
