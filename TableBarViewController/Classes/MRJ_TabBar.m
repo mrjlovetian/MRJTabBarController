@@ -199,7 +199,6 @@
         self.scrollView.contentSize = CGSizeMake(MAX(x + self.leftAndRightSpacing, self.scrollView.frame.size.width),
                                                  self.scrollView.frame.size.height);
     } else {
-        
         /// 不支持滚动
         [self addSubview:self.itemSelectedBgImageView];
         CGFloat x = self.leftAndRightSpacing;
@@ -303,9 +302,7 @@
     }
 }
 
-/**
- *  更新选中背景的frame
- */
+/// 更新选中背景的frame
 - (void)updateSelectedBgFrameWithIndex:(NSUInteger)index {
     if (index == NSNotFound) {
         self.itemSelectedBgImageView.frame = CGRectZero;
@@ -314,10 +311,7 @@
     MRJ_TabItem *item = self.items[index];
     CGFloat width = item.frameWithOutTransform.size.width - self.itemSelectedBgInsets.left - self.itemSelectedBgInsets.right;
     CGFloat height = item.frameWithOutTransform.size.height - self.itemSelectedBgInsets.top - self.itemSelectedBgInsets.bottom;
-    self.itemSelectedBgImageView.frame = CGRectMake(item.frameWithOutTransform.origin.x + self.itemSelectedBgInsets.left,
-                                                    item.frameWithOutTransform.origin.y + self.itemSelectedBgInsets.top,
-                                                    width,
-                                                    height);
+    self.itemSelectedBgImageView.frame = CGRectMake(item.frameWithOutTransform.origin.x + self.itemSelectedBgInsets.left, item.frameWithOutTransform.origin.y + self.itemSelectedBgInsets.top, width, height);
 }
 
 - (void)setScrollEnabledAndItemWidth:(CGFloat)width {
@@ -486,8 +480,7 @@
         [self.items makeObjectsPerformSelector:@selector(setTitleFont:) withObject:self.itemTitleSelectedFont];
         for (MRJ_TabItem *item in self.items) {
             if (!item.selected) {
-                item.transform = CGAffineTransformMakeScale(self.itemTitleUnselectedFontScale,
-                                                            self.itemTitleUnselectedFontScale);
+                item.transform = CGAffineTransformMakeScale(self.itemTitleUnselectedFontScale, self.itemTitleUnselectedFontScale);
             }
         }
     }
