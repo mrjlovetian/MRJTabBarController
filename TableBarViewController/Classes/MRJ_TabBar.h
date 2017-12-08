@@ -56,7 +56,6 @@
 @property (nonatomic, assign) CGFloat leftAndRightSpacing;
 /// 选中某一个item
 @property (nonatomic, assign) NSUInteger selectedItemIndex;
-
 /// 拖动内容视图时，item的颜色是否根据拖动位置显示渐变效果，默认为YES
 @property (nonatomic, assign, getter = isItemColorChangeFollowContentScroll) BOOL itemColorChangeFollowContentScroll;
 /// 拖动内容视图时，item的字体是否根据拖动位置显示渐变效果，默认为NO
