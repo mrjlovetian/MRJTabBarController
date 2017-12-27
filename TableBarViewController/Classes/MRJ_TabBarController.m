@@ -144,8 +144,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.automaticallyAdjustsScrollViewInsets = NO;
+    if (@available(ios 11, *)) {
+        self.contentScrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    } else {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
     self.view.clipsToBounds = YES;
     self.view.backgroundColor = [UIColor whiteColor];
     [self setupFrameOfTabBarAndContentView];
@@ -445,7 +448,6 @@
 }
 
 @end
-
 
 @implementation MRJ_TabContentScrollView
 
