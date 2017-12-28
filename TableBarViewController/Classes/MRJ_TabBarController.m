@@ -167,7 +167,6 @@
 - (void)setupFrameOfTabBarAndContentView {
     // 设置默认的tabBar的frame和contentViewFrame
     CGSize screenSize = [UIScreen mainScreen].bounds.size;
-    
     CGFloat contentViewY = 0;
     CGFloat tabBarY = screenSize.height - TAB_BAR_HEIGHT;
     CGFloat contentViewHeight = tabBarY;
@@ -370,7 +369,6 @@
     }
 
     _selectedControllerIndex = index;
-    
     [self didSelectViewControllerAtIndex:_selectedControllerIndex];
 }
 
@@ -484,7 +482,6 @@
     if (self.MRJ_delegate && [self.MRJ_delegate respondsToSelector:@selector(scrollView:shouldScrollToPageIndex:)]) {
         return [self.MRJ_delegate scrollView:self shouldScrollToPageIndex:targetIndex];
     }
-    
     return YES;
 }
 
