@@ -16,15 +16,11 @@
 
 @implementation YHJViewController
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
     
     RunTimeObject *runTime = [[RunTimeObject alloc] init];
     [runTime methodName];
-    
     
     [runTime performSelectorOnMainThread:@selector(otherMehod) withObject:self waitUntilDone:YES];
     
