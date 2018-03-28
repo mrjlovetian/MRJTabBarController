@@ -19,6 +19,7 @@
 @protocol MRJ_TabContentScrollViewDelegate <NSObject>
 
 @optional
+
 /// 协议方法
 - (BOOL)scrollView:(MRJ_TabContentScrollView *)scrollView shouldScrollToPageIndex:(NSUInteger)index;
 

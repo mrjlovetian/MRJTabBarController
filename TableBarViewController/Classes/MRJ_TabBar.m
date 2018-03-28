@@ -674,10 +674,8 @@
     // 计算背景的frame
     if (self.itemSelectedBgScrollFollowContent) {
         CGRect frame = self.itemSelectedBgImageView.frame;
-        
         CGFloat xDiff = rightItem.frameWithOutTransform.origin.x - leftItem.frameWithOutTransform.origin.x;
         frame.origin.x = rightScale * xDiff + leftItem.frameWithOutTransform.origin.x + self.itemSelectedBgInsets.left;
-        
         CGFloat widthDiff = rightItem.frameWithOutTransform.size.width - leftItem.frameWithOutTransform.size.width;
         if (widthDiff != 0) {
             CGFloat leftSelectedBgWidth = leftItem.frameWithOutTransform.size.width - self.itemSelectedBgInsets.left - self.itemSelectedBgInsets.right;
