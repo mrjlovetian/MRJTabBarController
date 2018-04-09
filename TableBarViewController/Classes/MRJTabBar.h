@@ -1,9 +1,9 @@
 //
-//  MRJ_TabBar.h
-//  MRJ_TabBarController
+//  MRJTabBar.h
+//  MRJTabBarController
 //
 //  Created by 余洪江 on 17/8/11.
-//  Copyright (c) 2017年 MRJ_TabBarController. All rights reserved.
+//  Copyright (c) 2017年 MRJTabBarController. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -148,11 +148,11 @@
                  marginBottom:(CGFloat)marginBottom;
 
 /**
- *  添加一个特殊的MRJ_TabItem到tabBar上，此TabItem不包含在tabBar的items数组里
+ *  添加一个特殊的MRJTabItem到tabBar上，此TabItem不包含在tabBar的items数组里
  *  主要用于有的项目需要在tabBar的中间放置一个单独的按钮，类似于新浪微博等。
  *  此方法仅适用于不可滚动类型的tabBar
  *
- *  @param item    MRJ_TabItem对象
+ *  @param item    MRJTabItem对象
  *  @param index   将其放在此index的item后面
  *  @param handler 点击事件回调
  */

@@ -1,6 +1,6 @@
 //
-//  MRJ_TabBarController.m
-//  MRJ_TabBarController
+//  MRJTabBarController.m
+//  MRJTabBarController
 //
 //  Created by 余洪江 on 17/8/11.
 //  Copyright (c) 2017年 MRJTabBarController. All rights reserved.
@@ -34,9 +34,9 @@
 @end
 
 
-#pragma mark - UIViewController (MRJ_TabBarController)
+#pragma mark - UIViewController (MRJTabBarController)
 
-@implementation UIViewController (MRJ_TabBarController)
+@implementation UIViewController (MRJTabBarController)
 
 /// 标题
 - (NSString *)tabItemTitle {
@@ -69,7 +69,7 @@
 }
 
 /// tabbar
-- (MRJTabItem *)mrjtabItem {
+- (MRJTabItem *)tabItem {
     MRJTabBar *tabBar = self.tabBarController.tabBar;
     if (!tabBar) {
         return nil;
@@ -102,7 +102,7 @@
 
 @end
 
-#pragma mark - MRJ_TabBarController
+#pragma mark - MRJTabBarController
 
 @interface MRJTabBarController () <UIScrollViewDelegate, MRJTabContentScrollViewDelegate> {
     BOOL _didViewAppeared;
@@ -371,7 +371,7 @@
     [self didSelectViewControllerAtIndex:_selectedControllerIndex];
 }
 
-#pragma mark - MRJ_TabContentScrollViewDelegate
+#pragma mark - MRJTabContentScrollViewDelegate
 
 - (BOOL)scrollView:(MRJTabContentScrollView *)scrollView shouldScrollToPageIndex:(NSUInteger)index {
     if ([self respondsToSelector:@selector(tabBar:shouldSelectItemAtIndex:)]) {

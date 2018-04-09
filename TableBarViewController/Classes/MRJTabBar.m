@@ -1,9 +1,9 @@
 //
-//  MRJ_TabBar.m
-//  MRJ_TabBarController
+//  MRJTabBar.m
+//  MRJTabBarController
 //
 //  Created by 余洪江 on 17/8/11.
-//  Copyright (c) 2017年 MRJ_TabBar. All rights reserved.
+//  Copyright (c) 2017年 MRJTabBar. All rights reserved.
 //
 
 #import "MRJTabBar.h"

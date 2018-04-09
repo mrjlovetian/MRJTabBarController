@@ -1,9 +1,9 @@
 //
-//  MRJ_TabBarController.h
-//  MRJ_TabBarController
+//  MRJTabBarController.h
+//  MRJTabBarController
 //
 //  Created by 余洪江 on 17/8/11.
-//  Copyright (c) 2017年 MRJ_TabBarController. All rights reserved.
+//  Copyright (c) 2017年 MRJTabBarController. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>

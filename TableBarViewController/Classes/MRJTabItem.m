@@ -1,9 +1,9 @@
 //
-//  MRJ_TabItem.m
-//  MRJ_TabBarController
+//  MRJTabItem.m
+//  MRJTabBarController
 //
 //  Created by 余洪江 on 17/8/11.
-//  Copyright (c) 2017年 MRJ_TabItem. All rights reserved.
+//  Copyright (c) 2017年 MRJTabItem. All rights reserved.
 //
 
 #import "MRJTabItem.h"
