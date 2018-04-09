@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = 'MRJ_BarViewController'
+  s.name             = 'MRJTabBarViewController'
   s.version          = '0.3.0'
   s.summary          = '对导航栏做了兼容，可以支持Apple TV的一个tabbar，后续会继续优化!'
 

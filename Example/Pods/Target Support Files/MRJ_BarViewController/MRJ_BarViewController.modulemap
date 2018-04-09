@@ -1,6 +1,0 @@
-framework module MRJ_BarViewController {
-  umbrella header "MRJ_BarViewController-umbrella.h"
-
-  export *
-  module * { export * }
-}

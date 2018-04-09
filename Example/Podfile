@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'TableBarViewController_Example' do
-  pod 'MRJ_BarViewController', :path => '../'
+  pod 'MRJTabBarViewController', :path => '../'
 
   target 'TableBarViewController_Tests' do
     inherit! :search_paths

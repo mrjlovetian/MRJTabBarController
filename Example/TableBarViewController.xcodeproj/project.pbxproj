@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0AFB08CC1F5BBE1A0072A8E0 /* MRJ_BarViewController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0AFB08CB1F5BBE1A0072A8E0 /* MRJ_BarViewController.podspec */; };
+		0AFB08CC1F5BBE1A0072A8E0 /* MRJTabBarViewController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 0AFB08CB1F5BBE1A0072A8E0 /* MRJTabBarViewController.podspec */; };
 		0AFB08CF1F5C136A0072A8E0 /* RunTimeObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFB08CE1F5C136A0072A8E0 /* RunTimeObject.m */; };
 		1BEEB77883F8CD552E8FF212 /* Pods_TableBarViewController_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5556988B3F096CF43321ADA /* Pods_TableBarViewController_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
@@ -56,7 +56,7 @@
 		0AF3ADCE1F645A5E0046DE4A /* TVTableViewControoler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TVTableViewControoler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF3ADE31F645A5E0046DE4A /* TVTableViewControolerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVTableViewControolerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AF3ADEE1F645A5E0046DE4A /* TVTableViewControolerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TVTableViewControolerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0AFB08CB1F5BBE1A0072A8E0 /* MRJ_BarViewController.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = MRJ_BarViewController.podspec; path = ../MRJ_BarViewController.podspec; sourceTree = "<group>"; };
+		0AFB08CB1F5BBE1A0072A8E0 /* MRJTabBarViewController.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = MRJTabBarViewController.podspec; path = ../MRJTabBarViewController.podspec; sourceTree = "<group>"; };
 		0AFB08CD1F5C136A0072A8E0 /* RunTimeObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RunTimeObject.h; sourceTree = "<group>"; };
 		0AFB08CE1F5C136A0072A8E0 /* RunTimeObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RunTimeObject.m; sourceTree = "<group>"; };
 		0D0E50B8241D044B1954BC58 /* Pods-TableBarViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TableBarViewController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TableBarViewController_Example/Pods-TableBarViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -236,7 +236,7 @@
 		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				0AFB08CB1F5BBE1A0072A8E0 /* MRJ_BarViewController.podspec */,
+				0AFB08CB1F5BBE1A0072A8E0 /* MRJTabBarViewController.podspec */,
 				5B8C4B4F932A8590841731B7 /* README.md */,
 				14A0DF709E3A80DBB08F0B16 /* LICENSE */,
 			);
@@ -418,7 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
-				0AFB08CC1F5BBE1A0072A8E0 /* MRJ_BarViewController.podspec in Resources */,
+				0AFB08CC1F5BBE1A0072A8E0 /* MRJTabBarViewController.podspec in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -442,13 +442,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TableBarViewController_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		181A0C9AAE08968622F77F01 /* [CP] Embed Pods Frameworks */ = {
@@ -457,9 +460,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TableBarViewController_Example/Pods-TableBarViewController_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MRJTabBarViewController/MRJTabBarViewController.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MRJTabBarViewController.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -502,13 +508,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TableBarViewController_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C6C521AF26EBCD8825902C1D /* [CP] Copy Pods Resources */ = {

@@ -1,0 +1,6 @@
+framework module MRJTabBarViewController {
+  umbrella header "MRJTabBarViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}
