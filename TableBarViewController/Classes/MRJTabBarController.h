@@ -60,7 +60,7 @@
 @property (nonatomic, strong) UIImage *tabItemSelectedImage;
 
 - (MRJTabItem *)tabItem;
-- (MRJTabBarController *)tabBarController;
+- (MRJTabBarController *)mtabBarController;
 
 /// ViewController对应的Tab被Select后，执行此方法，此方法为回调方法
 /// @param isFirstTime  是否为第一次被选中

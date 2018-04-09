@@ -53,7 +53,7 @@
     return objc_getAssociatedObject(self, _cmd);
 }
 
-- (void)setTtabItemImage:(UIImage *)tabItemImage {
+- (void)setTabItemImage:(UIImage *)tabItemImage {
     self.tabItem.image = tabItemImage;
     objc_setAssociatedObject(self, @selector(tabItemImage), tabItemImage, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
@@ -70,19 +70,19 @@
 
 /// tabbar
 - (MRJTabItem *)tabItem {
-    MRJTabBar *tabBar = self.tabBarController.tabBar;
+    MRJTabBar *tabBar = self.mtabBarController.tabBar;
     if (!tabBar) {
         return nil;
     }
-    if (![self.tabBarController.viewControllers containsObject:self]) {
+    if (![self.mtabBarController.viewControllers containsObject:self]) {
         return nil;
     }
     
-    NSUInteger index = [self.tabBarController.viewControllers indexOfObject:self];
+    NSUInteger index = [self.mtabBarController.viewControllers indexOfObject:self];
     return tabBar.items[index];
 }
 
-- (MRJTabBarController *)tabBarController {
+- (MRJTabBarController *)mtabBarController {
     return (MRJTabBarController *)self.parentViewController;
 }
 
