@@ -6,9 +6,9 @@
 //  Copyright (c) 2017年 MRJ_TabItem. All rights reserved.
 //
 
-#import "MRJ_TabItem.h"
+#import "MRJTabItem.h"
 
-@interface MRJ_TabItem ()
+@interface MRJTabItem ()
 
 @property (nonatomic, strong) UIButton *badgeButton;
 @property (nonatomic, strong) UIView *doubleTapView;
@@ -26,7 +26,7 @@
 
 @end
 
-@implementation MRJ_TabItem
+@implementation MRJTabItem
 
 - (instancetype)init {
     self = [super init];
@@ -42,7 +42,7 @@
 }
 
 + (instancetype)buttonWithType:(UIButtonType)buttonType {
-    MRJ_TabItem *item = [super buttonWithType:buttonType];
+    MRJTabItem *item = [super buttonWithType:buttonType];
     [item setup];
     return item;
 }
@@ -53,7 +53,7 @@
     self.badgeButton.clipsToBounds = YES;
     [self addSubview:self.badgeButton];
     self.adjustsImageWhenHighlighted = NO;
-    _badgeStyle = MRJ_TabItemBadgeStyleNumber;
+    _badgeStyle = MRJTabItemBadgeStyleNumber;
     self.badge = 0;
 }
 
@@ -182,13 +182,13 @@
     [self updateBadge];
 }
 
-- (void)setBadgeStyle:(MRJ_TabItemBadgeStyle)badgeStyle {
+- (void)setBadgeStyle:(MRJTabItemBadgeStyle)badgeStyle {
     _badgeStyle = badgeStyle;
     [self updateBadge];
 }
 
 - (void)updateBadge {
-    if (self.badgeStyle == MRJ_TabItemBadgeStyleNumber) {
+    if (self.badgeStyle == MRJTabItemBadgeStyleNumber) {
         if (self.badge == 0) {
             self.badgeButton.hidden = YES;
         } else {
@@ -218,7 +218,7 @@
             [self.badgeButton setTitle:badgeStr forState:UIControlStateNormal];
             self.badgeButton.hidden = NO;
         }
-    } else if (self.badgeStyle == MRJ_TabItemBadgeStyleDot) {
+    } else if (self.badgeStyle == MRJTabItemBadgeStyleDot) {
         [self.badgeButton setTitle:nil forState:UIControlStateNormal];
         self.badgeButton.frame = CGRectMake(self.bounds.size.width - self.dotBadgeCenterMarginRight - self.dotBadgeSideLength,
                                             self.dotBadgeMarginTop,

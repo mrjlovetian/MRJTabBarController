@@ -7,29 +7,29 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MRJ_TabItem.h"
+#import "MRJTabItem.h"
 
-@class MRJ_TabBar;
+@class MRJTabBar;
 
-@protocol MRJ_TabBarDelegate <NSObject>
+@protocol MRJTabBarDelegate <NSObject>
 
 @optional
 
 /// 是否能切换到指定index
-- (BOOL)tabBar:(MRJ_TabBar *)tabBar shouldSelectItemAtIndex:(NSUInteger)index;
+- (BOOL)tabBar:(MRJTabBar *)tabBar shouldSelectItemAtIndex:(NSUInteger)index;
 
 /// 将要切换到指定index
-- (void)tabBar:(MRJ_TabBar *)tabBar willSelectItemAtIndex:(NSUInteger)index;
+- (void)tabBar:(MRJTabBar *)tabBar willSelectItemAtIndex:(NSUInteger)index;
 
 /// 已经切换到指定index
-- (void)tabBar:(MRJ_TabBar *)tabBar didSelectedItemAtIndex:(NSUInteger)index;
+- (void)tabBar:(MRJTabBar *)tabBar didSelectedItemAtIndex:(NSUInteger)index;
 
 @end
 
-@interface MRJ_TabBar : UIView
+@interface MRJTabBar : UIView
 
 /// TabItems，提供给MRJ_TabBarController使用，一般不手动设置此属性
-@property (nonatomic, copy) NSArray <MRJ_TabItem *> *items;
+@property (nonatomic, copy) NSArray <MRJTabItem *> *items;
 /// item选中背景颜色
 @property (nonatomic, strong) UIColor *itemSelectedBgColor;
 /// item选中背景图像
@@ -64,10 +64,10 @@
 @property (nonatomic, assign, getter = isItemSelectedBgScrollFollowContent) BOOL itemSelectedBgScrollFollowContent;
 /// 将Image和Title设置为水平居中，默认为YES
 @property (nonatomic, assign, getter = isItemContentHorizontalCenter) BOOL itemContentHorizontalCenter;
-@property (nonatomic, weak) id<MRJ_TabBarDelegate> delegate;
+@property (nonatomic, weak) id<MRJTabBarDelegate> delegate;
 
 /// 返回已选中的item
-- (MRJ_TabItem *)selectedItem;
+- (MRJTabItem *)selectedItem;
 
 /// 根据titles创建item
 - (void)setTitles:(NSArray <NSString *> *)titles;
@@ -156,9 +156,9 @@
  *  @param index   将其放在此index的item后面
  *  @param handler 点击事件回调
  */
-- (void)setSpecialItem:(MRJ_TabItem *)item
+- (void)setSpecialItem:(MRJTabItem *)item
     afterItemWithIndex:(NSUInteger)index
-            tapHandler:(void (^)(MRJ_TabItem *item))handler;
+            tapHandler:(void (^)(MRJTabItem *item))handler;
 
 /**
  *  当MRJ_TabBar所属的MRJ_TabBarController内容视图支持拖动切换时，

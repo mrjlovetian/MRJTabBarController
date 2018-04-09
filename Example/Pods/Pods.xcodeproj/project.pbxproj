@@ -8,19 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		27F51B38339EEF78D311E91B92E008B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		2F22CDFE4FEC13310C4591186B431783 /* MRJ_TabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 902B05DEB8DBC110F6EC5BD890EA1D29 /* MRJ_TabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2F22CDFE4FEC13310C4591186B431783 /* MRJTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 902B05DEB8DBC110F6EC5BD890EA1D29 /* MRJTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40169CEAB755DB187B47EBF27F390380 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		4F9BB12507369386D0FFDCFD1B83AD5F /* Pods-TableBarViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4CCA56A3AF134D04A183942305764981 /* Pods-TableBarViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6AFF6548FFFDB034CE80C2DF642A9509 /* MRJ_TabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 647C9E8A452813FAA8809F930521B612 /* MRJ_TabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7915102B0E0458576246E3CE177E6B0C /* MRJ_TabItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A71F7F60399B25608DC9B914F246AF /* MRJ_TabItem.m */; };
-		8A683ADA0FEE4C4BABBFBA33D8CF798E /* MRJ_TabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = ECFB4FFCE432EAC327FBFDF5C98F9882 /* MRJ_TabBar.m */; };
-		958119065D9ADA0187A24F72A2CFD4CD /* MRJ_TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F0472DD9071001760609B39EE084AD /* MRJ_TabBarController.m */; };
+		6AFF6548FFFDB034CE80C2DF642A9509 /* MRJTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 647C9E8A452813FAA8809F930521B612 /* MRJTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7915102B0E0458576246E3CE177E6B0C /* MRJTabItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A71F7F60399B25608DC9B914F246AF /* MRJTabItem.m */; };
+		8A683ADA0FEE4C4BABBFBA33D8CF798E /* MRJTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = ECFB4FFCE432EAC327FBFDF5C98F9882 /* MRJTabBar.m */; };
+		958119065D9ADA0187A24F72A2CFD4CD /* MRJTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94F0472DD9071001760609B39EE084AD /* MRJTabBarController.m */; };
 		9711670864F57ABC51EFDBC32A267B42 /* Pods-TableBarViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B94303367F64574741730798931D465 /* Pods-TableBarViewController_Tests-dummy.m */; };
 		9DB21C491C3229D22576CF92A0AE86E5 /* Pods-TableBarViewController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7482291E86EBF5A97BAFC8D21F1CA091 /* Pods-TableBarViewController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD2F9CBD5C90A39844A414A36965E379 /* MRJ_BarViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5761F1D60129AA3501529B0F9C152221 /* MRJ_BarViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AD64828E9CAADE58996A6E2D047EC174 /* MRJ_BarViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52E18CB2B2D5B2026C4D23A0277ED457 /* MRJ_BarViewController-dummy.m */; };
 		B01EF8BBA94EBCAAF80AE2A78FA294EB /* Pods-TableBarViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E44A71ABB30FE70518C5FC15E838624A /* Pods-TableBarViewController_Example-dummy.m */; };
-		D555CF096F0D8CE39E330D1CDE2EA077 /* MRJ_TabItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F8FF6A6AEF78C49EC57C9A2D132B1A0A /* MRJ_TabItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D555CF096F0D8CE39E330D1CDE2EA077 /* MRJTabItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F8FF6A6AEF78C49EC57C9A2D132B1A0A /* MRJTabItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DEBC5565B627165A0ABDB3F4A38B899E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -38,21 +38,21 @@
 		1BA75F16395C6E25910D705F38D30A49 /* Pods-TableBarViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TableBarViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2A548012B7801027A396A73603FD59C3 /* Pods-TableBarViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TableBarViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		3B94303367F64574741730798931D465 /* Pods-TableBarViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TableBarViewController_Tests-dummy.m"; sourceTree = "<group>"; };
-		3FABAF835F2CBD61345732F02D8CB29E /* Pods_TableBarViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TableBarViewController_Tests.framework; path = "Pods-TableBarViewController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FABAF835F2CBD61345732F02D8CB29E /* Pods_TableBarViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableBarViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CCA56A3AF134D04A183942305764981 /* Pods-TableBarViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TableBarViewController_Example-umbrella.h"; sourceTree = "<group>"; };
 		52E18CB2B2D5B2026C4D23A0277ED457 /* MRJ_BarViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MRJ_BarViewController-dummy.m"; sourceTree = "<group>"; };
 		53BFB99BA5DC5B88B14C00BD2A2A6621 /* Pods-TableBarViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TableBarViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5761F1D60129AA3501529B0F9C152221 /* MRJ_BarViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MRJ_BarViewController-umbrella.h"; sourceTree = "<group>"; };
 		5AAC8E2B98887E30A2BF15CBA8BF1833 /* Pods-TableBarViewController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TableBarViewController_Example-resources.sh"; sourceTree = "<group>"; };
-		5EA111AD84532E2E4374FB994BD5CA8F /* MRJ_BarViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MRJ_BarViewController.framework; path = MRJ_BarViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		647C9E8A452813FAA8809F930521B612 /* MRJ_TabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MRJ_TabBarController.h; sourceTree = "<group>"; };
+		5EA111AD84532E2E4374FB994BD5CA8F /* MRJ_BarViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MRJ_BarViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		647C9E8A452813FAA8809F930521B612 /* MRJTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MRJTabBarController.h; sourceTree = "<group>"; };
 		7482291E86EBF5A97BAFC8D21F1CA091 /* Pods-TableBarViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-TableBarViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
-		87402E3466ED94B361B4223E857EF356 /* Pods_TableBarViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_TableBarViewController_Example.framework; path = "Pods-TableBarViewController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		87A71F7F60399B25608DC9B914F246AF /* MRJ_TabItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MRJ_TabItem.m; sourceTree = "<group>"; };
-		902B05DEB8DBC110F6EC5BD890EA1D29 /* MRJ_TabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MRJ_TabBar.h; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9440C2A675A72099C08E6D2E96D75F28 /* MRJ_BarViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = MRJ_BarViewController.modulemap; sourceTree = "<group>"; };
-		94F0472DD9071001760609B39EE084AD /* MRJ_TabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MRJ_TabBarController.m; sourceTree = "<group>"; };
+		87402E3466ED94B361B4223E857EF356 /* Pods_TableBarViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TableBarViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		87A71F7F60399B25608DC9B914F246AF /* MRJTabItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MRJTabItem.m; sourceTree = "<group>"; };
+		902B05DEB8DBC110F6EC5BD890EA1D29 /* MRJTabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MRJTabBar.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9440C2A675A72099C08E6D2E96D75F28 /* MRJ_BarViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MRJ_BarViewController.modulemap; sourceTree = "<group>"; };
+		94F0472DD9071001760609B39EE084AD /* MRJTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MRJTabBarController.m; sourceTree = "<group>"; };
 		9E71CB96DEB69C7398556489D7D53B79 /* Pods-TableBarViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TableBarViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		A00D3DCA33600375630E8FC5962B660A /* Pods-TableBarViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TableBarViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
 		A9878971AB71E2F735767F23C7635CB4 /* Pods-TableBarViewController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TableBarViewController_Tests-resources.sh"; sourceTree = "<group>"; };
@@ -61,17 +61,17 @@
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D550754580BA365FA3028043A2C2C921 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D78C0D80236530CF8BEC5BAAC05FB5E9 /* MRJ_BarViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MRJ_BarViewController.xcconfig; sourceTree = "<group>"; };
-		D8FAA6693AA4C3D70836D8C73878905E /* Pods-TableBarViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TableBarViewController_Example.modulemap"; sourceTree = "<group>"; };
+		D8FAA6693AA4C3D70836D8C73878905E /* Pods-TableBarViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TableBarViewController_Example.modulemap"; sourceTree = "<group>"; };
 		DCA3C184DEF47BAAA135DBE041DB12FD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E1BE723222760AF26E5192EB5009DD06 /* Pods-TableBarViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TableBarViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E44A71ABB30FE70518C5FC15E838624A /* Pods-TableBarViewController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TableBarViewController_Example-dummy.m"; sourceTree = "<group>"; };
-		E61BB69B79E52DC58F7D54BC92B157AD /* Pods-TableBarViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-TableBarViewController_Tests.modulemap"; sourceTree = "<group>"; };
+		E61BB69B79E52DC58F7D54BC92B157AD /* Pods-TableBarViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-TableBarViewController_Tests.modulemap"; sourceTree = "<group>"; };
 		EB93FAF16B0F147222F156173B289314 /* Pods-TableBarViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TableBarViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		ECBD025B37509415E3B3EA377CD32819 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ECFB4FFCE432EAC327FBFDF5C98F9882 /* MRJ_TabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MRJ_TabBar.m; sourceTree = "<group>"; };
+		ECFB4FFCE432EAC327FBFDF5C98F9882 /* MRJTabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MRJTabBar.m; sourceTree = "<group>"; };
 		F00C67782BDDABC448A9938050C33ED9 /* Pods-TableBarViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TableBarViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F0A3EBD9A7EE1E905FA8CD2A31DF3826 /* Pods-TableBarViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TableBarViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
-		F8FF6A6AEF78C49EC57C9A2D132B1A0A /* MRJ_TabItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MRJ_TabItem.h; sourceTree = "<group>"; };
+		F8FF6A6AEF78C49EC57C9A2D132B1A0A /* MRJTabItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MRJTabItem.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,14 +105,13 @@
 		1ECD4FE160A6723D650B3A8D41C587FA /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				902B05DEB8DBC110F6EC5BD890EA1D29 /* MRJ_TabBar.h */,
-				ECFB4FFCE432EAC327FBFDF5C98F9882 /* MRJ_TabBar.m */,
-				647C9E8A452813FAA8809F930521B612 /* MRJ_TabBarController.h */,
-				94F0472DD9071001760609B39EE084AD /* MRJ_TabBarController.m */,
-				F8FF6A6AEF78C49EC57C9A2D132B1A0A /* MRJ_TabItem.h */,
-				87A71F7F60399B25608DC9B914F246AF /* MRJ_TabItem.m */,
+				902B05DEB8DBC110F6EC5BD890EA1D29 /* MRJTabBar.h */,
+				ECFB4FFCE432EAC327FBFDF5C98F9882 /* MRJTabBar.m */,
+				647C9E8A452813FAA8809F930521B612 /* MRJTabBarController.h */,
+				94F0472DD9071001760609B39EE084AD /* MRJTabBarController.m */,
+				F8FF6A6AEF78C49EC57C9A2D132B1A0A /* MRJTabItem.h */,
+				87A71F7F60399B25608DC9B914F246AF /* MRJTabItem.m */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -235,7 +234,6 @@
 			children = (
 				1ECD4FE160A6723D650B3A8D41C587FA /* Classes */,
 			);
-			name = TableBarViewController;
 			path = TableBarViewController;
 			sourceTree = "<group>";
 		};
@@ -255,9 +253,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD2F9CBD5C90A39844A414A36965E379 /* MRJ_BarViewController-umbrella.h in Headers */,
-				2F22CDFE4FEC13310C4591186B431783 /* MRJ_TabBar.h in Headers */,
-				6AFF6548FFFDB034CE80C2DF642A9509 /* MRJ_TabBarController.h in Headers */,
-				D555CF096F0D8CE39E330D1CDE2EA077 /* MRJ_TabItem.h in Headers */,
+				2F22CDFE4FEC13310C4591186B431783 /* MRJTabBar.h in Headers */,
+				6AFF6548FFFDB034CE80C2DF642A9509 /* MRJTabBarController.h in Headers */,
+				D555CF096F0D8CE39E330D1CDE2EA077 /* MRJTabItem.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,9 +364,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AD64828E9CAADE58996A6E2D047EC174 /* MRJ_BarViewController-dummy.m in Sources */,
-				8A683ADA0FEE4C4BABBFBA33D8CF798E /* MRJ_TabBar.m in Sources */,
-				958119065D9ADA0187A24F72A2CFD4CD /* MRJ_TabBarController.m in Sources */,
-				7915102B0E0458576246E3CE177E6B0C /* MRJ_TabItem.m in Sources */,
+				8A683ADA0FEE4C4BABBFBA33D8CF798E /* MRJTabBar.m in Sources */,
+				958119065D9ADA0187A24F72A2CFD4CD /* MRJTabBarController.m in Sources */,
+				7915102B0E0458576246E3CE177E6B0C /* MRJTabItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

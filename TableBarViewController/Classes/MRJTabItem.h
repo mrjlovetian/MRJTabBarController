@@ -9,12 +9,12 @@
 #import <UIKit/UIKit.h>
 
 /// Badge样式
-typedef NS_ENUM(NSInteger, MRJ_TabItemBadgeStyle) {
-    MRJ_TabItemBadgeStyleNumber = 0, // 数字样式
-    MRJ_TabItemBadgeStyleDot    = 1, // 小圆点
+typedef NS_ENUM(NSInteger, MRJTabItemBadgeStyle) {
+    MRJTabItemBadgeStyleNumber = 0, // 数字样式
+    MRJTabItemBadgeStyleDot    = 1, // 小圆点
 };
 
-@interface MRJ_TabItem : UIButton
+@interface MRJTabItem : UIButton
 
 /// item在tabBar中的index，此属性不能手动设置
 @property (nonatomic, assign) NSUInteger index;
@@ -41,7 +41,7 @@ typedef NS_ENUM(NSInteger, MRJ_TabItemBadgeStyle) {
 @property (nonatomic, assign) NSInteger badge;
 
 /// badge的样式，支持数字样式和小圆点
-@property (nonatomic, assign) MRJ_TabItemBadgeStyle badgeStyle;
+@property (nonatomic, assign) MRJTabItemBadgeStyle badgeStyle;
 
 /// badge的背景颜色
 @property (nonatomic, strong) UIColor *badgeBackgroundColor;

@@ -7,12 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MRJ_TabBar.h"
-#import "MRJ_TabItem.h"
+#import "MRJTabBar.h"
+#import "MRJTabItem.h"
 
-@interface MRJ_TabBarController : UIViewController <MRJ_TabBarDelegate>
+@interface MRJTabBarController : UIViewController <MRJTabBarDelegate>
 
-@property (nonatomic, strong, readonly) MRJ_TabBar *tabBar;
+@property (nonatomic, strong, readonly) MRJTabBar *tabBar;
 
 @property (nonatomic, copy) NSArray <UIViewController *> *viewControllers;
 
@@ -50,23 +50,23 @@
 
 @end
 
-@interface UIViewController (MRJ_TabBarController)
+@interface UIViewController (MRJTabBarController)
 
 /// tabItem的标题
-@property (nonatomic, copy) NSString *mrj_tabItemTitle;
+@property (nonatomic, copy) NSString *tabItemTitle;
 /// tabItem的图像
-@property (nonatomic, strong) UIImage *mrj_tabItemImage;
+@property (nonatomic, strong) UIImage *tabItemImage;
 /// tabItem的选中图像
-@property (nonatomic, strong) UIImage *mrj_tabItemSelectedImage;
+@property (nonatomic, strong) UIImage *tabItemSelectedImage;
 
-- (MRJ_TabItem *)mrj_tabItem;
-- (MRJ_TabBarController *)mrj_tabBarController;
+- (MRJTabItem *)tabItem;
+- (MRJTabBarController *)tabBarController;
 
 /// ViewController对应的Tab被Select后，执行此方法，此方法为回调方法
 /// @param isFirstTime  是否为第一次被选中
-- (void)mrj_tabItemDidSelected:(BOOL)isFirstTime;
+- (void)tabItemDidSelected:(BOOL)isFirstTime;
 
 /// ViewController对应的Tab被Deselect后，执行此方法，此方法为回调方法
-- (void)mrj_tabItemDidDeselected;
+- (void)tabItemDidDeselected;
 
 @end
