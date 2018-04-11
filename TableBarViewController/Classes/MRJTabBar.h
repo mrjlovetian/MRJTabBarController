@@ -28,7 +28,7 @@
 
 @interface MRJTabBar : UIView
 
-/// TabItems，提供给MRJ_TabBarController使用，一般不手动设置此属性
+/// TabItems，提供给MRJTabBarController使用，一般不手动设置此属性
 @property (nonatomic, copy) NSArray <MRJTabItem *> *items;
 /// item选中背景颜色
 @property (nonatomic, strong) UIColor *itemSelectedBgColor;
@@ -161,8 +161,8 @@
             tapHandler:(void (^)(MRJTabItem *item))handler;
 
 /**
- *  当MRJ_TabBar所属的MRJ_TabBarController内容视图支持拖动切换时，
- *  此方法用于同步内容视图scrollView拖动的偏移量，以此来改变MRJ_TabBar内控件的状态
+ *  当MRJTabBar所属的MRJTabBarController内容视图支持拖动切换时，
+ *  此方法用于同步内容视图scrollView拖动的偏移量，以此来改变MRJTabBar内控件的状态
  */
 - (void)updateSubViewsWhenParentScrollViewScroll:(UIScrollView *)scrollView;
 

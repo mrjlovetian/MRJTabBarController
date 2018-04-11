@@ -21,7 +21,7 @@ typedef NS_ENUM(NSInteger, MRJTabItemBadgeStyle) {
 
 /**
  *  用于记录tabItem在缩放前的frame，
- *  在MRJ_TabBar的属性itemFontChangeFollowContentScroll == YES时会用到
+ *  在MRJTabBar的属性itemFontChangeFollowContentScroll == YES时会用到
  */
 @property (nonatomic, assign, readonly) CGRect frameWithOutTransform;
 @property (nonatomic, assign) CGSize size;
@@ -33,7 +33,7 @@ typedef NS_ENUM(NSInteger, MRJTabItemBadgeStyle) {
 @property (nonatomic, strong) UIImage *selectedImage;
 
 /**
- *  当badgeStyle == MRJ_TabItemBadgeStyleNumber时，可以设置此属性，显示badge数值
+ *  当badgeStyle == MRJTabItemBadgeStyleNumber时，可以设置此属性，显示badge数值
  *  badge > 99，显示99+
  *  badge <= 99 && badge > -99，显示具体数值
  *  badge < -99，显示-99+

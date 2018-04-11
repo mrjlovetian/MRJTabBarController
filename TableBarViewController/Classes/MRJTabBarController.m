@@ -300,7 +300,7 @@
 
 - (void)didSelectViewControllerAtIndex:(NSUInteger)index {}
 
-#pragma mark - MRJ_TabBarDelegate
+#pragma mark - MRJTabBarDelegate
 
 - (void)tabBar:(MRJTabBar *)tabBar didSelectedItemAtIndex:(NSUInteger)index {
     if (index == self.selectedControllerIndex) {

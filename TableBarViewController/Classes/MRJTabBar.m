@@ -16,7 +16,7 @@
 @property (nonatomic, copy) void (^specialItemHandler)(MRJTabItem *item);
 /// 选中背景
 @property (nonatomic, strong) UIImageView *itemSelectedBgImageView;
-/// 选中背景相对于MRJ_TabItem的insets
+/// 选中背景相对于MRJTabItem的insets
 @property (nonatomic, assign) UIEdgeInsets itemSelectedBgInsets;
 /// TabItem选中切换时，是否显示动画
 @property (nonatomic, assign) BOOL itemSelectedBgSwitchAnimated;

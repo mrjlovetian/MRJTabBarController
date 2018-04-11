@@ -57,7 +57,7 @@
     self.badge = 0;
 }
 
-/// 覆盖父类的setHighlighted:方法，按下MRJ_TabItem时，不高亮该item
+/// 覆盖父类的setHighlighted:方法，按下MRJTabItem时，不高亮该item
 - (void)setHighlighted:(BOOL)highlighted {
     if (self.adjustsImageWhenHighlighted) {
         [super setHighlighted:highlighted];
